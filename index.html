@@ -12,30 +12,24 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!-- Mirrored from p.w3layouts.com/demos_new/template_demo/07-06-2017/match-demo_Free/360227837/web/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 22 Feb 2018 10:41:50 GMT -->
 <head>
 <title>Match a Matrimonial Category Bootstrap Responsive Web Template</title>
-<!--meta data-->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta charset="utf-8">
 <meta name="keywords" content="Match Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template, 
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
-<!--//meta data-->
 
-<link href="css/bootstrap.css" rel="stylesheet" type="text/css" media="all" /><!-- bootstrap-CSS -->
-<link href="css/font-awesome.css" rel="stylesheet" type="text/css" media="all" /><!-- Fontawesome-CSS -->
-<!-- Custom Theme files -->
-<link href="css/menu.css" rel="stylesheet" type="text/css" media="all" /> <!-- menu style --> 
-<!--theme-style-->
-<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />	
-<!--//theme-style-->
-<link rel="stylesheet" type="text/css" href="css/easy-responsive-tabs.css" />
+<link rel="stylesheet" href="css/jquery-ui.css" />
+<link rel="stylesheet" href="css/bootstrap.css" /><!-- bootstrap-CSS -->
+<link rel="stylesheet" href="css/font-awesome.css" /><!-- Fontawesome-CSS -->
+<link rel="stylesheet" href="css/menu.css" /> <!-- menu style --> 
+<link rel="stylesheet" href="css/style.css" />	
+<link rel="stylesheet" href="css/easy-responsive-tabs.css" />
 <link rel="stylesheet" href="css/intlTelInput.css">
-<!-- For Home Page Styling from 3rd party website
-<link rel="stylesheet" type="text/css" href="css/foundation.min.css" /> -->
-<link rel="stylesheet" type="text/css" href="css/matrimony.css" />
-<!-- online fonts -->
+<link rel="stylesheet" href="css/owl.carousel.min.css" />
+<link rel="stylesheet" href="css/owl.theme.default.min.css" />
+<link rel="stylesheet" href="css/matrimony.css" />
 <link href="http://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700&amp;subset=devanagari,latin-ext" rel="stylesheet">
 <link href="http://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&amp;subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
-<!-- /online fonts -->
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <script type='text/javascript' src='js/jquery-2.2.3.min.js'></script>
 <script>
@@ -603,9 +597,29 @@ $(document).ready(function(){
 			</div><!-- End .large-4 -->
 		</div><!-- End .large-12 -->
 	</section><!-- End #couple -->
+
+	<!-- Couple gallery section -->
+	<section id="couple-gallery">
+		<h2>Gallery</h2>
+		<div class="il-scattered-gallery">
+			<a href="#" class="il-photo-01 il-highlight"><img src="images/gallery/img1.jpg" alt=""></a>
+			<a href="#" class="il-photo-02"><img src="images/gallery/img2.jpg" alt=""></a>
+			<a href="#" class="il-photo-03"><img src="images/gallery/img3.jpg" alt=""></a>
+			<a href="#" class="il-photo-04"><img src="images/gallery/img4.jpg" alt=""></a>
+			<a href="#" class="il-photo-05"><img src="images/gallery/img5.jpg" alt=""></a>
+			<a href="#" class="il-photo-06"><img src="images/gallery/img1.jpg" alt=""></a>
+			<a href="#" class="il-photo-07"><img src="images/gallery/img2.jpg" alt=""></a>
+		</div>
+		<div class="couple-slideshow-wrap">
+			<ul id="couple-slideshow"></ul>
+			<ul class="couple-thumbs"></ul>
+		</div><!-- End .couple-slideshow-wrap -->
+		<a id="gallery-launcher" href="#">Click to view gallery</a>
+		<div class="couple-mobile-slider-wrap"><div class="couple-mobile-slider"></div></div>
+	</section><!-- End #couple-gallery -->
 	
 	<!-- ===================================================================
-	========================= Couple section start ===================== -->
+	========================= Couple section End ======================= -->
 
 	<!-- 728x90 -->	
 		<!-- featured profiles -->			
@@ -943,26 +957,60 @@ $(document).ready(function(){
 			<!-- //featured profiles -->		   
 					   
 		<!-- mobile-app -->
-			<div class="wthree-mobilaapp main-grid-border">
-				<div class="container">
-					<div class="app">
-						<div class="col-md-6 w3ls_app-left mpl">
-							<h3>Matrimonial mobile app on your smartphone!</h3>
-							<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-							<div class="agileits_app-devices">
-								<h5>Download the App</h5>
-								<a href="#"><img src="images/1.png" alt=""></a>
-								<a href="#"><img src="images/2.png" alt=""></a>
-								<div class="clearfix"> </div>
-							</div>
-						</div>
-						<div class="col-md-offset-1 col-md-5 app-image">
-							<img src="images/mob.png" alt="">
-						</div>
-						<div class="clearfix"></div>
+		<div class="wthree-mobilaapp main-grid-border">
+			<div class="container">
+				<div class="owl-carousel owl-theme">
+					<div class="item">
+						<img src="images/client_3.jpg">
+						<!-- <h4>1</h4> -->
+					</div>
+					<div class="item">
+						<img src="images/client_3.jpg">
+						<!-- <h4>2</h4> -->
+					</div>
+					<div class="item">
+						<img src="images/client_3.jpg">
+						<!-- <h4>3</h4> -->
+					</div>
+					<div class="item">
+						<img src="images/client_3.jpg">
+						<!-- <h4>4</h4> -->
+					</div>
+					<div class="item">
+						<img src="images/client_3.jpg">
+						<!-- <h4>5</h4> -->
+					</div>
+					<div class="item">
+						<img src="images/client_3.jpg">
+						<!-- <h4>6</h4> -->
+					</div>
+					<div class="item">
+						<img src="images/client_3.jpg">
+						<!-- <h4>7</h4> -->
+					</div>
+					<div class="item">
+						<img src="images/client_3.jpg">
+						<!-- <h4>8</h4> -->
+					</div>
+					<div class="item">
+						<img src="images/client_3.jpg">
+						<!-- <h4>9</h4> -->
+					</div>
+					<div class="item">
+						<img src="images/client_3.jpg">
+						<<!-- h4>10</h4> -->
+					</div>
+					<div class="item">
+						<img src="images/client_3.jpg">
+						<<!-- h4>11</h4> -->
+					</div>
+					<div class="item">
+						<img src="images/client_3.jpg">
+						<<!-- h4>12</h4> -->
 					</div>
 				</div>
 			</div>
+		</div>
 			<!-- /mobile-app -->
 	
 	<!-- browse profiles -->
@@ -1115,13 +1163,8 @@ $(document).ready(function(){
 		</div>
 	</div> 
 </footer>
-<!-- //footer -->	
-<!-- menu js aim -->
 	<script src="js/jquery.menu-aim.js"> </script>
 	<script src="js/main.js"></script> <!-- Resource jQuery -->
-	<!-- //menu js aim -->		
-<!-- Calendar -->
-	<link rel="stylesheet" href="css/jquery-ui.css" />
 	<script src="js/jquery-ui.js"></script>
 		<script>
 		  $(function() {
@@ -1129,44 +1172,63 @@ $(document).ready(function(){
 		 });
 		</script>
 <!-- //Calendar -->	
-	<!-- for bootstrap working -->
-		<script src="js/bootstrap.js"></script>
-<!-- //for bootstrap working -->
+	<script src="js/bootstrap.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
 	<script type="text/javascript">
 		$(document).ready(function() {
-			/*
-			var defaults = {
-	  			containerID: 'toTop', // fading element id
-				containerHoverID: 'toTopHover', // fading element hover id
-				scrollSpeed: 1200,
-				easingType: 'linear' 
-	 		};
-			*/
 			
 			$().UItoTop({ easingType: 'easeOutQuart' });
 							
 		});
 	</script>
 	<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
-	<!-- for smooth scrolling -->
 	<script type="text/javascript" src="js/move-top.js"></script>
 	<script type="text/javascript" src="js/easing.js"></script>
+	<!-- for smooth scrolling -->
 	<script type="text/javascript">
 	jQuery(document).ready(function($) {
-		$(".scroll").click(function(event){		
+		$(".scroll").click(function(event){
 			event.preventDefault();
 			$('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
 		});
 	});
 	</script>
 	<!-- //for smooth scrolling -->
-	<!-- <script src="js/vendor/foundation.min.js"></script>
-	<script src="js/vendor/plugins.js"></script>
-	<script src="js/vendor/scripts.js"></script> -->
+
+	<!-- ====== owl carousel ====== -->
+	<script type="text/javascript">
+		var owl = $('.owl-carousel');
+		owl.owlCarousel({
+			items:4,
+			loop:true,
+			margin:10,
+			autoplay:true,
+			autoplayTimeout:1000,
+			autoplayHoverPause:true,
+			responsive:{
+				0:{
+					items:1,
+					nav:true
+				},
+				600:{
+					items:3,
+					nav:false
+				},
+				1000:{
+					items:5,
+					nav:true,
+				}
+			}
+		});
+		$('.play').on('click',function(){
+			owl.trigger('play.owl.autoplay',[1000])
+		})
+		$('.stop').on('click',function(){
+			owl.trigger('stop.owl.autoplay')
+		})
+	</script>
 </body>
-<!-- //body -->
 
 <!-- Mirrored from p.w3layouts.com/demos_new/template_demo/07-06-2017/match-demo_Free/360227837/web/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 22 Feb 2018 10:42:16 GMT -->
 <!-- http://matrimony.infinitylabs.ca/ -->
 </html>
-<!-- //html -->
