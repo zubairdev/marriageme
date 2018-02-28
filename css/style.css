@@ -1186,6 +1186,8 @@ p.w3ls-login a:hover {
 /*-- browse profiles --*/
 .w3layouts-browse {
 	padding:60px 0;
+  /*background-color: #00c4da;*/
+  background-color: #c1f0f5;
 }
 .w3layouts-browse h3 {
 	font-size: 30px;

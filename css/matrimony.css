@@ -135,15 +135,6 @@ header.default {
 /*--------------------------------------------------------------
 BRIDESMAIDS GALLERY
 --------------------------------------------------------------*/
-#bridesmaid-gallery {
-  width: 100%;
-  margin-top: 0;
-  padding-top: 5.125rem;
-  height: 723px;
-  background: url("../images/bridesmaids-bg.jpg") center top no-repeat;
-  background-size: cover;
-  position: relative;
-}
 
 .bridemaids-mobile-slider-wrap {
   display: none;
@@ -254,6 +245,7 @@ COUPLE GALLERY
   text-align: center;
   position: relative;
   z-index: 2;
+  overflow: hidden;
 }
 #couple-gallery .close-btn {
   display: block;
@@ -319,10 +311,9 @@ COUPLE GALLERY
 }
 
 .il-scattered-gallery .il-highlight {
-  /*width: 557px;*/
-  width: 70%;
-  /*height: 360px;*/
-  height: auto;
+  width: 557px;
+  /*width: 70%;*/
+  height: 360px;
   top: 50%;
   left: 50%;
   margin-top: -181px;
@@ -331,9 +322,8 @@ COUPLE GALLERY
   display: block;
 }
 .il-scattered-gallery .il-photo-02 {
-  /*width: 453px;*/
-  width: 65%;
-  /*height: 292px;*/
+  width: 453px;
+  /*width: 65%;*/
   height: auto;
   top: 86px;
   left: 36px;
@@ -344,10 +334,9 @@ COUPLE GALLERY
   display: block;
 }
 .il-scattered-gallery .il-photo-03 {
-  /*width: 356px;*/
-  width: 55%;
-  /*height: 232px;*/
-  height: auto;
+  width: 356px;
+  /*width: 55%;*/
+  height: 232px;
   top: 52px;
   right: 103px;
   z-index: 6;
@@ -358,10 +347,9 @@ COUPLE GALLERY
   display: block;
 }
 .il-scattered-gallery .il-photo-04 {
-  /*width: 330px;*/
-  width: 50%;
-  /*height: 214px;*/
-  height: auto;
+  width: 330px;
+  /*width: 50%;*/
+  height: 214px;
   top: 205px;
   left: 120px;
   z-index: 3;
@@ -372,10 +360,9 @@ COUPLE GALLERY
   display: block;
 }
 .il-scattered-gallery .il-photo-05 {
-  /*width: 454px;*/
-  width: 45%;
-  /*height: 294px;*/
-  height: auto;
+  width: 454px;
+  /*width: 45%;*/
+  height: 294px;
   top: 247px;
   right: 5px;
   z-index: 1;
@@ -385,20 +372,18 @@ COUPLE GALLERY
   display: block;
 }
 .il-scattered-gallery .il-photo-06 {
-  /*width: 530px;*/
-  width: 50%;
-  /*height: 343px;*/
-  height: auto;
+  width: 530px;
+  /*width: 50%;*/
+  height: 343px;
   left: 106px;
   bottom: 53px;
   z-index: 5;
   display: block;
 }
 .il-scattered-gallery .il-photo-07 {
-  /*width: 417px;*/
-  width: 45%;
-  /*height: 269px;*/
-  height: auto;
+  width: 417px;
+  /*width: 45%;*/
+  height: 269px;
   bottom: 9px;
   right: 8px;
   z-index: 6;
@@ -678,6 +663,14 @@ COUPLE GALLERY
   }
   #couple .columns.large-4:first-child + .columns.large-4 + .columns.large-4 {
     margin-top: 8.75rem;
+  }
+  /*For not showing Gallery Images*/
+  #couple-gallery {
+    display: none;
+  }
+  /*Home page carousel slider bottom padding*/
+  #bridesmaid-gallery {
+    padding-top: 2.125rem;
   }
 }
 
