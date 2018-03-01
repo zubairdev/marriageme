@@ -4,7 +4,7 @@
 <div class="w3layouts-banner" id="home">
 <div class="container">
 	<div class="logo">
-		<h1><a class="cd-logo link link--takiri" href="index.html">Match <span><i class="fa fa-heart" aria-hidden="true"></i>Made in heaven.</span></a></h1>
+		<h1><a class="cd-logo link link--takiri" href="index.php">Match <span><i class="fa fa-heart" aria-hidden="true"></i>Made in heaven.</span></a></h1>
 	</div>
 	<div class="clearfix"></div>
 	<div class="agileits-register">
@@ -97,7 +97,7 @@
 				</div>
 				<div class="w3-agree">
 					<input type="checkbox" id="c1" name="cc">
-					<label class="agileits-agree">I have read & agree to the <a href="terms.html">Terms and Conditions</a></label>
+					<label class="agileits-agree">I have read & agree to the <a href="terms.php">Terms and Conditions</a></label>
 				</div>
 				<input type="submit" value="Register me" />
 				<div class="clearfix"></div>
@@ -260,7 +260,7 @@
 							<ul id="flexiselDemo3">
 								<li>
 									<div class="col-md-3 biseller-column">
-										<a href="groom_profile.html">
+										<a href="groom_profile.php">
 											<div class="profile-image">
 												<img src="images/p1.jpg" class="img-responsive" alt="profile image">
 												<div class="agile-overlay">
@@ -278,7 +278,7 @@
 										</a>
 									</div>
 									<div class="col-md-3 biseller-column">
-										<a href="groom_profile.html">
+										<a href="groom_profile.php">
 											<div class="profile-image">
 												<img src="images/p2.jpg" class="img-responsive" alt="profile image">
 												<div class="agile-overlay">
@@ -296,7 +296,7 @@
 										</a>
 									</div>
 									<div class="col-md-3 biseller-column">
-										<a href="bride_profile.html">
+										<a href="bride_profile.php">
 											<div class="profile-image">
 												<img src="images/p3.jpg" class="img-responsive" alt="profile image">
 												<div class="agile-overlay">
@@ -314,7 +314,7 @@
 										</a>
 									</div>
 									<div class="col-md-3 biseller-column">
-										<a href="groom_profile.html">
+										<a href="groom_profile.php">
 											<div class="profile-image">
 												<img src="images/p4.jpg" class="img-responsive" alt="profile image">
 												<div class="agile-overlay">
@@ -332,7 +332,7 @@
 										</a>
 									</div>
 									<div class="col-md-3 biseller-column">
-										<a href="bride_profile.html">
+										<a href="bride_profile.php">
 											<div class="profile-image">
 												<img src="images/p5.jpg" class="img-responsive" alt="profile image">
 												<div class="agile-overlay">
@@ -350,7 +350,7 @@
 										</a>
 									</div>
 									<div class="col-md-3 biseller-column">
-										<a href="bride_profile.html">
+										<a href="bride_profile.php">
 											<div class="profile-image">
 												<img src="images/p6.jpg" class="img-responsive" alt="profile image">
 												<div class="agile-overlay">
@@ -368,7 +368,7 @@
 										</a>
 									</div>
 									<div class="col-md-3 biseller-column">
-										<a href="groom_profile.html">
+										<a href="groom_profile.php">
 											<div class="profile-image">
 												<img src="images/p7.jpg" class="img-responsive" alt="profile image">
 												<div class="agile-overlay">
@@ -386,7 +386,7 @@
 										</a>
 									</div>
 									<div class="col-md-3 biseller-column">
-										<a href="bride_profile.html">
+										<a href="bride_profile.php">
 											<div class="profile-image">
 												<img src="images/p8.jpg" class="img-responsive" alt="profile image">
 												<div class="agile-overlay">
@@ -406,7 +406,7 @@
 								</li>
 								<li>
 									<div class="col-md-3 biseller-column">
-										<a href="groom_profile.html">
+										<a href="groom_profile.php">
 											<div class="profile-image">
 												<img src="images/p9.jpg" class="img-responsive" alt="profile image">
 												<div class="agile-overlay">
@@ -424,7 +424,7 @@
 										</a>
 									</div>
 									<div class="col-md-3 biseller-column">
-										<a href="groom_profile.html">
+										<a href="groom_profile.php">
 											<div class="profile-image">
 												<img src="images/p10.jpg" class="img-responsive" alt="profile image">
 												<div class="agile-overlay">
@@ -442,7 +442,7 @@
 										</a>
 									</div>
 									<div class="col-md-3 biseller-column">
-										<a href="groom_profile.html">
+										<a href="groom_profile.php">
 											<div class="profile-image">
 												<img src="images/p11.jpg" class="img-responsive" alt="profile image">
 												<div class="agile-overlay">
@@ -460,7 +460,7 @@
 										</a>
 									</div>
 									<div class="col-md-3 biseller-column">
-										<a href="bride_profile.html">
+										<a href="bride_profile.php">
 											<div class="profile-image">
 												<img src="images/p12.jpg" class="img-responsive" alt="profile image">
 												<div class="agile-overlay">
@@ -478,7 +478,7 @@
 										</a>
 									</div>
 									<div class="col-md-3 biseller-column">
-										<a href="groom_profile.html">
+										<a href="groom_profile.php">
 											<div class="profile-image">
 												<img src="images/p7.jpg" class="img-responsive" alt="profile image">
 												<div class="agile-overlay">
@@ -496,7 +496,7 @@
 										</a>
 									</div>
 									<div class="col-md-3 biseller-column">
-										<a href="bride_profile.html">
+										<a href="bride_profile.php">
 											<div class="profile-image">
 												<img src="images/p5.jpg" class="img-responsive" alt="profile image">
 												<div class="agile-overlay">
@@ -514,7 +514,7 @@
 										</a>
 									</div>
 									<div class="col-md-3 biseller-column">
-										<a href="groom_profile.html">
+										<a href="groom_profile.php">
 											<div class="profile-image">
 												<img src="images/p1.jpg" class="img-responsive" alt="profile image">
 												<div class="agile-overlay">
@@ -532,7 +532,7 @@
 										</a>
 									</div>
 									<div class="col-md-3 biseller-column">
-										<a href="groom_profile.html">
+										<a href="groom_profile.php">
 											<div class="profile-image">
 												<img src="images/p2.jpg" class="img-responsive" alt="profile image">
 												<div class="agile-overlay">
@@ -647,7 +647,7 @@
 	<div class="agile-assisted-service text-center">
 		<h4>Assisted Service</h4>
 		<p>Our Relationship Managers have helped thousands of members find their life partners.</p>
-		<a href="assisted_services.html">Know More</a>
+		<a href="assisted_services.php">Know More</a>
 	</div>
 	<!-- //Assisted Service -->
 	
@@ -660,14 +660,13 @@
 				<p>250+ branches across World, Largest Network of its Kind.</p>
 			</div>
 			<div class="col-md-6 col-sm-6 w3layouts location-grids location-grids-2">
-				<a href="contact.html"><img src="images/location.jpg" class="img-responsive" alt="Agileits W3layouts" /></a>
+				<a href="contact.php"><img src="images/location.jpg" class="img-responsive" alt="Agileits W3layouts" /></a>
 			</div>
 			<div class="clearfix"></div>			
 		</div>
 	</div>
 	<!-- //Location -->
 	
-	<?php include(SHARED_PATH . '/public_footer.php'); ?>
 	<!-- Get started -->
 	<!-- <div class="w3layous-story text-center">
 		<div class="container">
@@ -675,6 +674,8 @@
 		</div>
 	</div> -->
 	<!-- //Get started -->
+
+	<?php include(SHARED_PATH . '/public_footer.php'); ?>
 	
 <!-- Mirrored from p.w3layouts.com/demos_new/template_demo/07-06-2017/match-demo_Free/360227837/web/index.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 22 Feb 2018 10:42:16 GMT -->
 <!-- http://matrimony.infinitylabs.ca/ -->

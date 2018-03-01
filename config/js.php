@@ -1,22 +1,23 @@
 <script src="<?php echo url_for('js/jquery.menu-aim.js'); ?>"> </script>
 <script src="<?php echo url_for('js/main.js'); ?>"></script> <!-- Resource jQuery -->
 <script src="<?php echo url_for('js/jquery-ui.js'); ?>"></script>
+<script src="<?php echo url_for('js/bootstrap.js'); ?>"></script>
+<script src="<?php echo url_for('js/owl.carousel.min.js'); ?>"></script>
+<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+<script type="text/javascript" src="<?php echo url_for('js/move-top.js'); ?>"></script>
+<script type="text/javascript" src="<?php echo url_for('js/easing.js'); ?>"></script>
+<script type="text/javascript" src="<?php echo url_for('js/easyResponsiveTabs.js'); ?>"></script>
+<script type="text/javascript" src="<?php echo url_for('js/multi.process.js'); ?>"></script>
 <script>
 	$(function() {
 		$( "#datepicker" ).datepicker();
 	});
 </script>
-<!-- //Calendar -->	
-<script src="<?php echo url_for('js/bootstrap.js'); ?>"></script>
-<script src="<?php echo url_for('js/owl.carousel.min.js'); ?>"></script>
 <script type="text/javascript">
 	$(document).ready(function() {
 		$().UItoTop({ easingType: 'easeOutQuart' });
 	});
 </script>
-<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
-<script type="text/javascript" src="<?php echo url_for('js/move-top.js'); ?>"></script>
-<script type="text/javascript" src="<?php echo url_for('js/easing.js'); ?>"></script>
 <!-- for smooth scrolling -->
 <script type="text/javascript">
 	jQuery(document).ready(function($) {
@@ -48,7 +49,7 @@
 				nav:false
 			},
 			1000:{
-				items:5,
+				items:4,
 				nav:true,
 			}
 		}

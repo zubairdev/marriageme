@@ -8,50 +8,50 @@
 			<div class="col-md-4 w3-browse-grid">
 				<h4>By Country</h4>
 				<ul>
-					<li><a href="nri_list.html">Country 1</a></li>
-					<li><a href="nri_list.html">Country 2</a></li>
-					<li><a href="nri_list.html">Country 3</a></li>
-					<li><a href="nri_list.html">Country 4</a></li>
-					<li><a href="nri_list.html">Country 5</a></li>
-					<li><a href="nri_list.html">Country 6</a></li>
-					<li><a href="nri_list.html">Country 7</a></li>
-					<li><a href="nri_list.html">Country 8</a></li>
-					<li><a href="nri_list.html">Country 9</a></li>
-					<li><a href="nri_list.html">Country 10</a></li>
-					<li><a href="nri_list.html">Country 11</a></li>
-					<li class="more"><a href="nri_list.html">more..</a></li>
+					<li><a href="nri_list.php">Country 1</a></li>
+					<li><a href="nri_list.php">Country 2</a></li>
+					<li><a href="nri_list.php">Country 3</a></li>
+					<li><a href="nri_list.php">Country 4</a></li>
+					<li><a href="nri_list.php">Country 5</a></li>
+					<li><a href="nri_list.php">Country 6</a></li>
+					<li><a href="nri_list.php">Country 7</a></li>
+					<li><a href="nri_list.php">Country 8</a></li>
+					<li><a href="nri_list.php">Country 9</a></li>
+					<li><a href="nri_list.php">Country 10</a></li>
+					<li><a href="nri_list.php">Country 11</a></li>
+					<li class="more"><a href="nri_list.php">more..</a></li>
 				</ul>
 			</div>
 			<div class="col-md-4 w3-browse-grid">
 				<h4>By Religion</h4>
 				<ul>
-					<li><a href="r_list.html">Religion 1</a></li>
-					<li><a href="r_list.html">Religion 2</a></li>
-					<li><a href="r_list.html">Religion 3</a></li>
-					<li><a href="r_list.html">Religion 4</a></li>
-					<li><a href="r_list.html">Religion 5</a></li>
-					<li><a href="r_list.html">Religion 6</a></li>
-					<li><a href="r_list.html">Religion 7</a></li>
-					<li><a href="r_list.html">Religion 8</a></li>
-					<li><a href="r_list.html">Religion 9</a></li>
-					<li><a href="r_list.html">Religion 10</a></li>
-					<li><a href="r_list.html">Religion 11</a></li>
-					<li class="more"><a href="r_list.html">more..</a></li>
+					<li><a href="r_list.php">Religion 1</a></li>
+					<li><a href="r_list.php">Religion 2</a></li>
+					<li><a href="r_list.php">Religion 3</a></li>
+					<li><a href="r_list.php">Religion 4</a></li>
+					<li><a href="r_list.php">Religion 5</a></li>
+					<li><a href="r_list.php">Religion 6</a></li>
+					<li><a href="r_list.php">Religion 7</a></li>
+					<li><a href="r_list.php">Religion 8</a></li>
+					<li><a href="r_list.php">Religion 9</a></li>
+					<li><a href="r_list.php">Religion 10</a></li>
+					<li><a href="r_list.php">Religion 11</a></li>
+					<li class="more"><a href="r_list.php">more..</a></li>
 				</ul>
 			</div>
 			<div class="col-md-4 w3-browse-grid">
 				<h4>By Community</h4>
 				<ul>
-					<li><a href="r_list.html">Community 1</a></li>
-					<li><a href="r_list.html">Community 2</a></li>
-					<li><a href="r_list.html">Community 3</a></li>
-					<li><a href="r_list.html">Community 4</a></li>
-					<li><a href="r_list.html">Community 5</a></li>
-					<li><a href="r_list.html">Community 6</a></li>
-					<li><a href="r_list.html">Community 7</a></li>
-					<li><a href="r_list.html">Community 8</a></li>
-					<li><a href="r_list.html">Community 9</a></li>
-					<li class="more"><a href="r_list.html">more..</a></li>
+					<li><a href="r_list.php">Community 1</a></li>
+					<li><a href="r_list.php">Community 2</a></li>
+					<li><a href="r_list.php">Community 3</a></li>
+					<li><a href="r_list.php">Community 4</a></li>
+					<li><a href="r_list.php">Community 5</a></li>
+					<li><a href="r_list.php">Community 6</a></li>
+					<li><a href="r_list.php">Community 7</a></li>
+					<li><a href="r_list.php">Community 8</a></li>
+					<li><a href="r_list.php">Community 9</a></li>
+					<li class="more"><a href="r_list.php">more..</a></li>
 				</ul>
 			</div>
 			<div class="clearfix"></div>
@@ -76,22 +76,22 @@
 					<div class="col-md-4 footer-grids">
 						<h3>Company</h3>
 						<ul>
-							<li><a href="about.html">About Us</a></li>
-							<li><a href="feedback.html">Feedback</a></li>  
-							<li><a href="help.html">Help</a></li>  
-							<li><a href="tips.html">Safety Tips</a></li>
-							<li><a href="typo.html">Typography</a></li>
-							<li><a href="icons.html">Icons Page</a></li>
+							<li><a href="about.php">About Us</a></li>
+							<li><a href="feedback.php">Feedback</a></li>  
+							<li><a href="help.php">Help</a></li>  
+							<li><a href="tips.php">Safety Tips</a></li>
+							<li><a href="typo.php">Typography</a></li>
+							<li><a href="icons.php">Icons Page</a></li>
 						</ul>
 					</div>
 					<div class="col-md-4 footer-grids">
 						<h3>Quick links</h3>
 						<ul>
-							<li><a href="terms.html">Terms of use</a></li>
-							<li><a href="privacy_policy.html">Privacy Policy</a></li>
-							<li><a href="contact.html">Contact Us</a></li>
-							<li><a href="faq.html">FAQ</a></li>
-							<li><a href="sitemap.html">Sitemap</a></li>
+							<li><a href="terms.php">Terms of use</a></li>
+							<li><a href="privacy_policy.php">Privacy Policy</a></li>
+							<li><a href="contact.php">Contact Us</a></li>
+							<li><a href="faq.php">FAQ</a></li>
+							<li><a href="sitemap.php">Sitemap</a></li>
 						</ul> 
 					</div>
 					<div class="col-md-4 footer-grids">

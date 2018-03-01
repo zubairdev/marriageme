@@ -21,212 +21,211 @@
 								<nav class="cd-dropdown"> 
 									<a href="#0" class="cd-close">Close</a>
 									<ul class="cd-dropdown-content"> 
-										<li><a href="matches.html">All Profiles</a></li>
+										<li><a href="matches.php">All Profiles</a></li>
 										<li class="has-children">
 											<a href="#">Mother Tongue</a> 
 											<ul class="cd-secondary-dropdown is-hidden">
 												<li class="go-back"><a href="#">Menu</a></li>
-												<li><a href="l_list.html">Language 1</a></li>
-												<li><a href="l_list.html">Language 2</a> </li>
-												<li><a href="l_list.html">Language 3</a></li>
-												<li><a href="l_list.html">Language 4</a></li>
-												<li><a href="l_list.html">Language 5</a></li> 
-												<li><a href="l_list.html">Language 6</a></li> 
-												<li><a href="l_list.html">Language 7</a></li> 
-												<li><a href="l_list.html">Language 8</a></li> 
-												<li><a href="l_list.html">Language 9</a></li> 
-												<li><a href="l_list.html">Language 10</a></li> 
-												<li><a href="l_list.html">Language 11</a></li> 
-												<li><a href="l_list.html">Language 12</a></li> 
-												<li><a href="l_list.html">Language 13</a></li> 
-												<li><a href="l_list.html">Language 14</a></li> 
-												<li><a href="l_list.html">Language 15</a></li> 
-												<li><a href="l_list.html">Language 16</a></li> 
-												<li><a href="l_list.html">Language 17</a></li> 
-												<li><a href="l_list.html">Language 18</a></li> 
-												<li><a href="l_list.html">Language 19</a></li> 
-												<li><a href="l_list.html">Language 20</a></li> 
-
+												<li><a href="l_list.php">Language 1</a></li>
+												<li><a href="l_list.php">Language 2</a> </li>
+												<li><a href="l_list.php">Language 3</a></li>
+												<li><a href="l_list.php">Language 4</a></li>
+												<li><a href="l_list.php">Language 5</a></li> 
+												<li><a href="l_list.php">Language 6</a></li> 
+												<li><a href="l_list.php">Language 7</a></li> 
+												<li><a href="l_list.php">Language 8</a></li> 
+												<li><a href="l_list.php">Language 9</a></li> 
+												<li><a href="l_list.php">Language 10</a></li> 
+												<li><a href="l_list.php">Language 11</a></li> 
+												<li><a href="l_list.php">Language 12</a></li> 
+												<li><a href="l_list.php">Language 13</a></li> 
+												<li><a href="l_list.php">Language 14</a></li> 
+												<li><a href="l_list.php">Language 15</a></li> 
+												<li><a href="l_list.php">Language 16</a></li> 
+												<li><a href="l_list.php">Language 17</a></li> 
+												<li><a href="l_list.php">Language 18</a></li> 
+												<li><a href="l_list.php">Language 19</a></li> 
+												<li><a href="l_list.php">Language 20</a></li> 
 											</ul> <!-- .cd-secondary-dropdown --> 
 										</li> <!-- .has-children -->
 										<li class="has-children">
 											<a href="#">Caste</a> 
 											<ul class="cd-secondary-dropdown is-hidden">
 												<li class="go-back"><a href="#">Menu</a></li>
-												<li><a href="c_list.html">Caste 1</a></li>
-												<li><a href="c_list.html">Caste 2</a></li>  
-												<li><a href="c_list.html">Caste 3</a></li> 
-												<li><a href="c_list.html">Caste 4</a></li> 
-												<li><a href="c_list.html">Caste 5</a></li> 
-												<li><a href="c_list.html">Caste 6</a></li> 
-												<li><a href="c_list.html">Caste 7</a></li> 
-												<li><a href="c_list.html">Caste 8</a></li> 
-												<li><a href="c_list.html">Caste 9</a></li> 
-												<li><a href="c_list.html">Caste 10</a></li> 
-												<li><a href="c_list.html">Caste 11</a></li> 
-												<li><a href="c_list.html">Caste 12</a></li> 
-												<li><a href="c_list.html">Caste 13</a></li> 
-												<li><a href="c_list.html">Caste 14</a></li> 
-												<li><a href="c_list.html">Caste 15</a></li> 
-												<li><a href="c_list.html">Caste 16</a></li> 
-												<li><a href="c_list.html">Caste 17</a></li> 
-												<li><a href="c_list.html">Caste 18</a></li> 
-												<li><a href="c_list.html">Caste 19</a></li> 
-												<li><a href="c_list.html">Caste 20</a></li> 
-												<li><a href="c_list.html">Caste 21</a></li> 
-												<li><a href="c_list.html">Caste 22</a></li> 
-												<li><a href="c_list.html">Caste 23</a></li> 
-												<li><a href="c_list.html">Caste 24</a></li> 
-												<li><a href="c_list.html">Caste 25</a></li> 
-												<li><a href="c_list.html">Caste 26</a></li> 
+												<li><a href="c_list.php">Caste 1</a></li>
+												<li><a href="c_list.php">Caste 2</a></li>  
+												<li><a href="c_list.php">Caste 3</a></li> 
+												<li><a href="c_list.php">Caste 4</a></li> 
+												<li><a href="c_list.php">Caste 5</a></li> 
+												<li><a href="c_list.php">Caste 6</a></li> 
+												<li><a href="c_list.php">Caste 7</a></li> 
+												<li><a href="c_list.php">Caste 8</a></li> 
+												<li><a href="c_list.php">Caste 9</a></li> 
+												<li><a href="c_list.php">Caste 10</a></li> 
+												<li><a href="c_list.php">Caste 11</a></li> 
+												<li><a href="c_list.php">Caste 12</a></li> 
+												<li><a href="c_list.php">Caste 13</a></li> 
+												<li><a href="c_list.php">Caste 14</a></li> 
+												<li><a href="c_list.php">Caste 15</a></li> 
+												<li><a href="c_list.php">Caste 16</a></li> 
+												<li><a href="c_list.php">Caste 17</a></li> 
+												<li><a href="c_list.php">Caste 18</a></li> 
+												<li><a href="c_list.php">Caste 19</a></li> 
+												<li><a href="c_list.php">Caste 20</a></li> 
+												<li><a href="c_list.php">Caste 21</a></li> 
+												<li><a href="c_list.php">Caste 22</a></li> 
+												<li><a href="c_list.php">Caste 23</a></li> 
+												<li><a href="c_list.php">Caste 24</a></li> 
+												<li><a href="c_list.php">Caste 25</a></li> 
+												<li><a href="c_list.php">Caste 26</a></li> 
 											</ul> <!-- .cd-secondary-dropdown --> 
 										</li> <!-- .has-children -->
 										<li class="has-children">
-											<a href="products2.html">Religion</a> 
+											<a href="products2.php">Religion</a> 
 											<ul class="cd-secondary-dropdown is-hidden"> 
 												<li class="go-back"><a href="#">Menu</a></li>
-												<li><a href="r_list.html">Religion 1</a></li> 
-												<li><a href="r_list.html">Religion 2</a></li> 
-												<li><a href="r_list.html">Religion 3</a></li> 
-												<li><a href="r_list.html">Religion 4</a></li> 
-												<li><a href="r_list.html">Religion 5</a></li> 
-												<li><a href="r_list.html">Religion 6</a></li> 
-												<li><a href="r_list.html">Religion 7</a></li> 
-												<li><a href="r_list.html">Religion 8</a></li> 
-												<li><a href="r_list.html">Religion 9</a></li> 
-												<li><a href="r_list.html">Religion 10</a></li> 
-												<li><a href="r_list.html">Religion 11</a></li> 
-												<li><a href="r_list.html">Religion 12</a></li> 
-												<li><a href="r_list.html">Religion 13</a></li> 
-												<li><a href="r_list.html">Religion 14</a></li> 
-												<li><a href="r_list.html">Religion 15</a></li> 
-												<li><a href="r_list.html">Religion 16</a></li> 
-												<li><a href="r_list.html">Religion 17</a></li> 
+												<li><a href="r_list.php">Religion 1</a></li> 
+												<li><a href="r_list.php">Religion 2</a></li> 
+												<li><a href="r_list.php">Religion 3</a></li> 
+												<li><a href="r_list.php">Religion 4</a></li> 
+												<li><a href="r_list.php">Religion 5</a></li> 
+												<li><a href="r_list.php">Religion 6</a></li> 
+												<li><a href="r_list.php">Religion 7</a></li> 
+												<li><a href="r_list.php">Religion 8</a></li> 
+												<li><a href="r_list.php">Religion 9</a></li> 
+												<li><a href="r_list.php">Religion 10</a></li> 
+												<li><a href="r_list.php">Religion 11</a></li> 
+												<li><a href="r_list.php">Religion 12</a></li> 
+												<li><a href="r_list.php">Religion 13</a></li> 
+												<li><a href="r_list.php">Religion 14</a></li> 
+												<li><a href="r_list.php">Religion 15</a></li> 
+												<li><a href="r_list.php">Religion 16</a></li> 
+												<li><a href="r_list.php">Religion 17</a></li> 
 											</ul><!-- .cd-secondary-dropdown --> 
 										</li> <!-- .has-children --> 
 										<li class="has-children">
 											<a href="#">City</a> 
 											<ul class="cd-secondary-dropdown is-hidden">
 												<li class="go-back"><a href="#">Menu</a></li>
-												<li><a href="city_list.html">City 1</a></li> 
-												<li><a href="city_list.html">City 2</a></li> 
-												<li><a href="city_list.html">City 3</a></li> 
-												<li><a href="city_list.html">City 4</a></li> 
-												<li><a href="city_list.html">City 5</a></li> 
-												<li><a href="city_list.html">City 6</a></li> 
-												<li><a href="city_list.html">City 7</a></li> 
-												<li><a href="city_list.html">City 8</a></li> 
-												<li><a href="city_list.html">City 9</a></li> 
-												<li><a href="city_list.html">City 10</a></li> 
-												<li><a href="city_list.html">City 11</a></li> 
-												<li><a href="city_list.html">City 12</a></li> 
-												<li><a href="city_list.html">City 13</a></li> 
-												<li><a href="city_list.html">City 14</a></li> 
-												<li><a href="city_list.html">City 15</a></li> 
-												<li><a href="city_list.html">City 16</a></li> 
-												<li><a href="city_list.html">City 17</a></li> 
-												<li><a href="city_list.html">City 18</a></li> 
-												<li><a href="city_list.html">City 19</a></li> 
-												<li><a href="city_list.html">City 20</a></li> 
-												<li><a href="city_list.html">City 21</a></li> 
-												<li><a href="city_list.html">City 22</a></li> 
-												<li><a href="city_list.html">City 23</a></li> 
-												<li><a href="city_list.html">City 24</a></li> 
-												<li><a href="city_list.html">City 25</a></li> 
-												<li><a href="city_list.html">City 26</a></li> 
-												<li><a href="city_list.html">City 27</a></li> 
-												<li><a href="city_list.html">City 28</a></li> 
-												<li><a href="city_list.html">City 29</a></li> 
-												<li><a href="city_list.html">City 30</a></li> 
-												<li><a href="city_list.html">City 31</a></li> 
-												<li><a href="city_list.html">City 32</a></li> 
-												<li><a href="city_list.html">City 33</a></li> 
-												<li><a href="city_list.html">City 34</a></li> 
-												<li><a href="city_list.html">City 35</a></li> 
-												<li><a href="city_list.html">City 36</a></li> 
+												<li><a href="city_list.php">City 1</a></li> 
+												<li><a href="city_list.php">City 2</a></li> 
+												<li><a href="city_list.php">City 3</a></li> 
+												<li><a href="city_list.php">City 4</a></li> 
+												<li><a href="city_list.php">City 5</a></li> 
+												<li><a href="city_list.php">City 6</a></li> 
+												<li><a href="city_list.php">City 7</a></li> 
+												<li><a href="city_list.php">City 8</a></li> 
+												<li><a href="city_list.php">City 9</a></li> 
+												<li><a href="city_list.php">City 10</a></li> 
+												<li><a href="city_list.php">City 11</a></li> 
+												<li><a href="city_list.php">City 12</a></li> 
+												<li><a href="city_list.php">City 13</a></li> 
+												<li><a href="city_list.php">City 14</a></li> 
+												<li><a href="city_list.php">City 15</a></li> 
+												<li><a href="city_list.php">City 16</a></li> 
+												<li><a href="city_list.php">City 17</a></li> 
+												<li><a href="city_list.php">City 18</a></li> 
+												<li><a href="city_list.php">City 19</a></li> 
+												<li><a href="city_list.php">City 20</a></li> 
+												<li><a href="city_list.php">City 21</a></li> 
+												<li><a href="city_list.php">City 22</a></li> 
+												<li><a href="city_list.php">City 23</a></li> 
+												<li><a href="city_list.php">City 24</a></li> 
+												<li><a href="city_list.php">City 25</a></li> 
+												<li><a href="city_list.php">City 26</a></li> 
+												<li><a href="city_list.php">City 27</a></li> 
+												<li><a href="city_list.php">City 28</a></li> 
+												<li><a href="city_list.php">City 29</a></li> 
+												<li><a href="city_list.php">City 30</a></li> 
+												<li><a href="city_list.php">City 31</a></li> 
+												<li><a href="city_list.php">City 32</a></li> 
+												<li><a href="city_list.php">City 33</a></li> 
+												<li><a href="city_list.php">City 34</a></li> 
+												<li><a href="city_list.php">City 35</a></li> 
+												<li><a href="city_list.php">City 36</a></li> 
 											</ul><!-- .cd-secondary-dropdown --> 
 										</li> <!-- .has-children -->  
 										<li class="has-children">
 											<a href="#">Occupation</a>
 											<ul class="cd-secondary-dropdown is-hidden">
 												<li class="go-back"><a href="#">Menu</a></li>
-												<li><a href="o_list.html">IT Software </a></li> 
-												<li><a href="o_list.html">Teacher  </a></li>
-												<li><a href="o_list.html">Business man </a></li>
-												<li><a href="o_list.html">Lawyers</a></li>
-												<li><a href="o_list.html">Defence </a></li>
-												<li><a href="o_list.html">IAS </a></li>
-												<li><a href="o_list.html">Govt.Services </a></li>
-												<li><a href="o_list.html">Doctors </a></li>
+												<li><a href="o_list.php">IT Software </a></li> 
+												<li><a href="o_list.php">Teacher  </a></li>
+												<li><a href="o_list.php">Business man </a></li>
+												<li><a href="o_list.php">Lawyers</a></li>
+												<li><a href="o_list.php">Defence </a></li>
+												<li><a href="o_list.php">IAS </a></li>
+												<li><a href="o_list.php">Govt.Services </a></li>
+												<li><a href="o_list.php">Doctors </a></li>
 											</ul><!-- .cd-secondary-dropdown --> 
 										</li> <!-- .has-children -->  
 										<li class="has-children">
 											<a href="#">State</a>
 											<ul class="cd-secondary-dropdown is-hidden">
 												<li class="go-back"><a href="#">Menu</a></li>
-												<li><a href="s_list.html">State 1</a></li> 
-												<li><a href="s_list.html">State 2</a></li> 
-												<li><a href="s_list.html">State 3</a></li> 
-												<li><a href="s_list.html">State 4</a></li> 
-												<li><a href="s_list.html">State 5</a></li> 
-												<li><a href="s_list.html">State 6</a></li> 
-												<li><a href="s_list.html">State 7</a></li> 
-												<li><a href="s_list.html">State 8</a></li> 
-												<li><a href="s_list.html">State 9</a></li> 
-												<li><a href="s_list.html">State 10</a></li> 
-												<li><a href="s_list.html">State 11</a></li> 
-												<li><a href="s_list.html">State 12</a></li> 
-												<li><a href="s_list.html">State 13</a></li> 
-												<li><a href="s_list.html">State 14</a></li> 
-												<li><a href="s_list.html">State 15</a></li> 
-												<li><a href="s_list.html">State 16</a></li> 
-												<li><a href="s_list.html">State 17</a></li> 
-												<li><a href="s_list.html">State 18</a></li> 
-												<li><a href="s_list.html">State 19</a></li> 
-												<li><a href="s_list.html">State 20</a></li> 
-												<li><a href="s_list.html">State 21</a></li> 
-												<li><a href="s_list.html">State 22</a></li> 
-												<li><a href="s_list.html">State 23</a></li> 
-												<li><a href="s_list.html">State 24</a></li> 
-												<li><a href="s_list.html">State 25</a></li> 
-												<li><a href="s_list.html">State 26</a></li> 
-												<li><a href="s_list.html">State 27</a></li> 
-												<li><a href="s_list.html">State 28</a></li> 
-												<li><a href="s_list.html">State 29</a></li> 
-												<li><a href="s_list.html">State 30</a></li> 
-												<li><a href="s_list.html">State 31</a></li> 
-												<li><a href="s_list.html">State 32</a></li> 
-												<li><a href="s_list.html">State 33</a></li> 
-												<li><a href="s_list.html">State 34</a></li> 
-												<li><a href="s_list.html">State 35</a></li> 
-												<li><a href="s_list.html">State 36</a></li> 
-												<li><a href="s_list.html">State 37</a></li> 
-												<li><a href="s_list.html">State 38</a></li> 
-												<li><a href="s_list.html">State 39</a></li> 
-												<li><a href="s_list.html">State 40</a></li> 
-												<li><a href="s_list.html">State 41</a></li> 
-												<li><a href="s_list.html">State 42</a></li> 
-												<li><a href="s_list.html">State 43</a></li> 
-												<li><a href="s_list.html">State 44</a></li> 
-												<li><a href="s_list.html">State 45</a></li> 
+												<li><a href="s_list.php">State 1</a></li> 
+												<li><a href="s_list.php">State 2</a></li> 
+												<li><a href="s_list.php">State 3</a></li> 
+												<li><a href="s_list.php">State 4</a></li> 
+												<li><a href="s_list.php">State 5</a></li> 
+												<li><a href="s_list.php">State 6</a></li> 
+												<li><a href="s_list.php">State 7</a></li> 
+												<li><a href="s_list.php">State 8</a></li> 
+												<li><a href="s_list.php">State 9</a></li> 
+												<li><a href="s_list.php">State 10</a></li> 
+												<li><a href="s_list.php">State 11</a></li> 
+												<li><a href="s_list.php">State 12</a></li> 
+												<li><a href="s_list.php">State 13</a></li> 
+												<li><a href="s_list.php">State 14</a></li> 
+												<li><a href="s_list.php">State 15</a></li> 
+												<li><a href="s_list.php">State 16</a></li> 
+												<li><a href="s_list.php">State 17</a></li> 
+												<li><a href="s_list.php">State 18</a></li> 
+												<li><a href="s_list.php">State 19</a></li> 
+												<li><a href="s_list.php">State 20</a></li> 
+												<li><a href="s_list.php">State 21</a></li> 
+												<li><a href="s_list.php">State 22</a></li> 
+												<li><a href="s_list.php">State 23</a></li> 
+												<li><a href="s_list.php">State 24</a></li> 
+												<li><a href="s_list.php">State 25</a></li> 
+												<li><a href="s_list.php">State 26</a></li> 
+												<li><a href="s_list.php">State 27</a></li> 
+												<li><a href="s_list.php">State 28</a></li> 
+												<li><a href="s_list.php">State 29</a></li> 
+												<li><a href="s_list.php">State 30</a></li> 
+												<li><a href="s_list.php">State 31</a></li> 
+												<li><a href="s_list.php">State 32</a></li> 
+												<li><a href="s_list.php">State 33</a></li> 
+												<li><a href="s_list.php">State 34</a></li> 
+												<li><a href="s_list.php">State 35</a></li> 
+												<li><a href="s_list.php">State 36</a></li> 
+												<li><a href="s_list.php">State 37</a></li> 
+												<li><a href="s_list.php">State 38</a></li> 
+												<li><a href="s_list.php">State 39</a></li> 
+												<li><a href="s_list.php">State 40</a></li> 
+												<li><a href="s_list.php">State 41</a></li> 
+												<li><a href="s_list.php">State 42</a></li> 
+												<li><a href="s_list.php">State 43</a></li> 
+												<li><a href="s_list.php">State 44</a></li> 
+												<li><a href="s_list.php">State 45</a></li> 
 											</ul><!-- .cd-secondary-dropdown --> 
 										</li> <!-- .has-children -->  
 										<li class="has-children">
 											<a href="#">NRI</a>
 											<ul class="cd-secondary-dropdown is-hidden">
 												<li class="go-back"><a href="#">Menu</a></li>
-												<li><a href="nri_list.html">Country 1</a></li> 
-												<li><a href="nri_list.html">Country 2</a></li> 
-												<li><a href="nri_list.html">Country 3</a></li> 
-												<li><a href="nri_list.html">Country 4</a></li> 
-												<li><a href="nri_list.html">Country 5</a></li> 
-												<li><a href="nri_list.html">Country 6</a></li> 
-												<li><a href="nri_list.html">Country 7</a></li> 
-												<li><a href="nri_list.html">Country 8</a></li> 
-												<li><a href="nri_list.html">Country 9</a></li> 
-												<li><a href="nri_list.html">Country 10</a></li> 
-												<li><a href="nri_list.html">Country 11</a></li> 
-												<li><a href="nri_list.html">Country 12</a></li> 
+												<li><a href="nri_list.php">Country 1</a></li> 
+												<li><a href="nri_list.php">Country 2</a></li> 
+												<li><a href="nri_list.php">Country 3</a></li> 
+												<li><a href="nri_list.php">Country 4</a></li> 
+												<li><a href="nri_list.php">Country 5</a></li> 
+												<li><a href="nri_list.php">Country 6</a></li> 
+												<li><a href="nri_list.php">Country 7</a></li> 
+												<li><a href="nri_list.php">Country 8</a></li> 
+												<li><a href="nri_list.php">Country 9</a></li> 
+												<li><a href="nri_list.php">Country 10</a></li> 
+												<li><a href="nri_list.php">Country 11</a></li> 
+												<li><a href="nri_list.php">Country 12</a></li> 
 											</ul><!-- .cd-secondary-dropdown --> 
 										</li>  
 									</ul> <!-- .cd-dropdown-content -->
@@ -247,18 +246,18 @@
 								<!-- Collect the nav links, forms, and other content for toggling -->
 								<div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
 									<ul class="nav navbar-nav nav_1">
-										<li class="active"><a href="index.html">Home</a></li>
-										<li><a href="about.html">About</a></li>
-										<li><a href="search.html">Search</a></li>
-										<li><a href="app.html" target="_blank">Mobile</a></li>
+										<li class="active"><a href="index.php">Home</a></li>
+										<li><a href="about.php">About</a></li>
+										<li><a href="search.php">Search</a></li>
+										<li><a href="app.php" target="_blank">Mobile</a></li>
 					  <!--<li class="dropdown">
 		              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Search<span class="caret"></span></a>
 		              <ul class="dropdown-menu" role="menu">
-		                <li><a href="search.html">Regular Search</a></li>
-		                <li><a href="profile.html">Recently Viewed Profiles</a></li>
-		                <li><a href="search-id.html">Search By Profile ID</a></li>
-		                <li><a href="faq.html">Faq</a></li>
-		                <li><a href="shortcodes.html">Shortcodes</a></li>
+		                <li><a href="search.php">Regular Search</a></li>
+		                <li><a href="profile.php">Recently Viewed Profiles</a></li>
+		                <li><a href="search-id.php">Search By Profile ID</a></li>
+		                <li><a href="faq.php">Faq</a></li>
+		                <li><a href="shortcodes.php">Shortcodes</a></li>
 		              </ul>
 		          </li>-->
 		          <li class="dropdown">
@@ -317,7 +316,7 @@
 		          		</div>
 		          	</ul>
 		          </li>
-		          <li class="last"><a href="contact.html">Contacts</a></li>
+		          <li class="last"><a href="contact.php">Contacts</a></li>
 		      </ul>
 		  </div><!-- /.navbar-collapse -->
 		</nav>
