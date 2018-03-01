@@ -1,21 +1,51 @@
 <?php
 
-class Bicycle extends DatabaseObject {
+class Profile extends DatabaseObject {
 
-  static protected $table_name = 'bicycles';
-  static protected $db_columns = ['id', 'brand', 'model', 'year', 'category', 'color', 'gender', 'price', 'weight_kg', 'condition_id', 'description'];
+  static protected $table_name = 'profile';
+  static protected $db_columns = ['id', 'personal_name', 'personal_gender', 'personal_age', 'personal_height', 'personal_religion', 'personal_caste', 'personal_marital', 'personal_tounge', 'personal_occupation', 'personal_ann_income', 'personal_country', 'personal_city', 'personal_about', 'personal_image', 'edu_HE', 'edu_PG', 'edu_PG_coll', 'edu_UG_deg', 'edu_School', 'family_mother', 'family_father', 'family_sisters', 'family_brothers', 'family_income', 'family_stay', 'family_value', 'lifestyle_appearance', 'lifestyle_assets', 'lifestyle_habits', 'lifestyle_language', 'lifestyle_bloodgroup', 'lifestyle_stay', 'partner_age', 'partner_height', 'partner_marital', 'partner_religion', 'partner_caste', 'partner_edu', 'partner_occupation', 'partner_income'];
 
   public $id;
-  public $brand;
-  public $model;
-  public $year;
-  public $category;
-  public $color;
-  public $description;
-  public $gender;
-  public $price;
-  public $weight_kg;
-  public $condition_id;
+  public $personal_name;
+  public $personal_gender;
+  public $personal_age;
+  public $personal_height;
+  public $personal_religion;
+  public $personal_caste;
+  public $personal_marital;
+  public $personal_tounge;
+  public $personal_occupation;
+  public $personal_ann_income;
+  public $personal_country;
+  public $personal_city;
+  public $personal_about;
+  public $personal_image;
+  public $edu_PG;
+  public $edu_PG_coll;
+  public $edu_UG_deg;
+  public $edu_School;
+  public $family_mother;
+  public $family_father;
+  public $family_sisters;
+  public $family_brothers;
+  public $family_income;
+  public $family_stay;
+  public $family_value;
+  public $lifestyle_appearance;
+  public $lifestyle_assets;
+  public $lifestyle_habits;
+  public $lifestyle_language;
+  public $lifestyle_bloodgroup;
+  public $lifestyle_stay;
+  public $partner_age;
+  public $partner_height;
+  public $partner_marital;
+  public $partner_religion;
+  public $partner_caste;
+  public $partner_edu;
+  public $partner_occupation;
+  public $partner_income;
+
 
   public const CATEGORIES = ['Road', 'Mountain', 'Hybrid', 'Cruiser', 'City', 'BMX'];
 
