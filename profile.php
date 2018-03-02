@@ -6,7 +6,7 @@ $id = $_GET['id'] ?? '1';
 
 $profile = Profile::find_by_id($id);
 
-// echo $profile->personal_email;
+// echo $profile->personal_name;
 ?>
 
 <?php include(SHARED_PATH . '/public_header.php'); ?>
@@ -34,16 +34,17 @@ $profile = Profile::find_by_id($id);
 	<!-- Bride Profile Details -->
 	<div class="w3ls-list">
 		<div class="container">
-		<h2>Bride Profile Details</h2>
+		<h2><?php echo h($profile->personal_name); ?> Profile Details</h2>
 		<div class="col-md-9 profiles-list-agileits">
 			<div class="single_w3_profile">
 				<div class="agileits_profile_image">
 					<img src="images/profile-image-girl.jpg" alt="profile image" />
 				</div>
 				<div class="w3layouts_details">
-					<h4>Profile ID : ZXC45S3 <?php echo h($profile->personal_email); ?></h4>
+					<h4>Profile ID : ZXC45S3</h4>
 					<span>Last Online 2 days ago.</span>
-					<p>24yrs / 5Ft. 3In. (160 cm). Female, Christian, Gupta, Hindi USA.</p>
+					<!-- <p>24yrs / 5Ft. 3In. (160 cm). Female, Christian, Gupta, Hindi USA.</p> -->
+					<p><?php echo h($profile->profile_main_detail()); ?></p>
 					<a href="#" data-toggle="modal" data-target="#myModal">View Contact</a>
 					<a href="#" data-toggle="modal" data-target="#myModal">Send interest</a>
 					<a href="#" data-toggle="modal" data-target="#myModal">Report Profile</a>
@@ -55,56 +56,58 @@ $profile = Profile::find_by_id($id);
 				<div class="agileits_aboutme">
 					<h4>About me</h4>
 					<h5>Brief about me:</h5>
-					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.</p>
-					<p>when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
-					<p>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+					<p><?php echo h($profile->personal_about); ?></p>
 					<h5>Family Details:</h5>
 					<div class="form_but1">
 						<label class="col-sm-3 control-label1">Mother : </label>
 						<div class="col-sm-9 w3_details">
-							Housewife
+							<?php echo h($profile->family_mother); ?>
 						</div>
 						<div class="clearfix"> </div>
 					</div>
 					<div class="form_but1">
 						<label class="col-sm-3 control-label1">Father : </label>
 						<div class="col-sm-9 w3_details">
-							Govt. Employee
+							<?php echo h($profile->family_father); ?>
 						</div>
 						<div class="clearfix"> </div>
 					</div>
+					<?php if ($profile->family_sisters != 0) { ?>
 					<div class="form_but1">
 						<label class="col-sm-3 control-label1">Sister's : </label>
 						<div class="col-sm-9 w3_details">
-							Not Specified
+							<?php echo h($profile->family_sisters); ?>
 						</div>
 						<div class="clearfix"> </div>
 					</div>
+					<?php } else { /* do nothing */ } ?>
+					<?php if ($profile->family_brothers != 0) { ?>
 					<div class="form_but1">
 						<label class="col-sm-3 control-label1">Brother's : </label>
 						<div class="col-sm-9 w3_details">
-							Not Specified
+							<?php echo h($profile->family_brothers); ?>
 						</div>
 						<div class="clearfix"> </div>
 					</div>
+					<?php } else { /* do nothing */ } ?>
 					<div class="form_but1">
 						<label class="col-sm-3 control-label1">Family Income : </label>
 						<div class="col-sm-9 w3_details">
-							Not Specified
+							<?php echo h($profile->family_income); ?>
 						</div>
 						<div class="clearfix"> </div>
 					</div>
 					<div class="form_but1">
 						<label class="col-sm-3 control-label1">Stay : </label>
 						<div class="col-sm-9 w3_details">
-							sed, USA
+							<?php echo h($profile->family_stay); ?>
 						</div>
 						<div class="clearfix"> </div>
 					</div>
 					<div class="form_but1">
 						<label class="col-sm-3 control-label1">Family Values : </label>
 						<div class="col-sm-9 w3_details">
-							Moderate
+							<?php echo h($profile->family_value); ?>
 						</div>
 						<div class="clearfix"> </div>
 					</div>
@@ -112,49 +115,35 @@ $profile = Profile::find_by_id($id);
 					<div class="form_but1">
 						<label class="col-sm-3 control-label1">Highest Education : </label>
 						<div class="col-sm-9 w3_details">
-							MBA/PGDM
+							<?php echo h($profile->edu_HE); ?>
 						</div>
 						<div class="clearfix"> </div>
 					</div>
 					<div class="form_but1">
 						<label class="col-sm-3 control-label1">UG Degree : </label>
 						<div class="col-sm-9 w3_details">
-							B.Tech
+							<?php echo h($profile->edu_UG_deg); ?>
 						</div>
 						<div class="clearfix"> </div>
 					</div>
 					<div class="form_but1">
 						<label class="col-sm-3 control-label1">School : </label>
 						<div class="col-sm-9 w3_details">
-							Not Filled in
+							<?php echo h($profile->edu_School); ?>
 						</div>
 						<div class="clearfix"> </div>
 					</div>
 					<div class="form_but1">
 						<label class="col-sm-3 control-label1">PG Degree : </label>
 						<div class="col-sm-9 w3_details">
-							Not Specified
+							<?php echo h($profile->edu_PG); ?>
 						</div>
 						<div class="clearfix"> </div>
 					</div>
 					<div class="form_but1">
 						<label class="col-sm-3 control-label1">PG College : </label>
 						<div class="col-sm-9 w3_details">
-							Not Specified
-						</div>
-						<div class="clearfix"> </div>
-					</div>
-					<div class="form_but1">
-						<label class="col-sm-3 control-label1">Occupation : </label>
-						<div class="col-sm-9 w3_details">
-							Not Specified
-						</div>
-						<div class="clearfix"> </div>
-					</div>
-					<div class="form_but1">
-						<label class="col-sm-3 control-label1">Annual Income : </label>
-						<div class="col-sm-9 w3_details">
-							Not Filled in
+							<?php echo h($profile->edu_PG_coll); ?>
 						</div>
 						<div class="clearfix"> </div>
 					</div>
@@ -162,49 +151,42 @@ $profile = Profile::find_by_id($id);
 					<div class="form_but1">
 						<label class="col-sm-3 control-label1">Appearance : </label>
 						<div class="col-sm-9 w3_details">
-							Fair, 55kg
+							<?php echo h($profile->lifestyle_appearance); ?>
 						</div>
 						<div class="clearfix"> </div>
 					</div>
 					<div class="form_but1">
 						<label class="col-sm-3 control-label1">Assets : </label>
 						<div class="col-sm-9 w3_details">
-							Not Filled in
+							<?php echo h($profile->lifestyle_assets); ?>
 						</div>
 						<div class="clearfix"> </div>
 					</div>
 					<div class="form_but1">
 						<label class="col-sm-3 control-label1">Habits : </label>
 						<div class="col-sm-9 w3_details">
-							Vegetarian, Doesn't Drink, Doesn't Smoke
+							<?php echo h($profile->lifestyle_habits); ?>
 						</div>
 						<div class="clearfix"> </div>
 					</div>
 					<div class="form_but1">
 						<label class="col-sm-3 control-label1">Languages Known : </label>
 						<div class="col-sm-9 w3_details">
-							English, Hindi, Urdu
+							<?php echo h($profile->lifestyle_language); ?>
 						</div>
 						<div class="clearfix"> </div>
 					</div>
 					<div class="form_but1">
 						<label class="col-sm-3 control-label1">Blood Group : </label>
 						<div class="col-sm-9 w3_details">
-							AB+
+							<?php echo h($profile->lifestyle_bloodgroup); ?>
 						</div>
 						<div class="clearfix"> </div>
 					</div>
 					<div class="form_but1">
 						<label class="col-sm-3 control-label1">Stay : </label>
 						<div class="col-sm-9 w3_details">
-							sed, USA
-						</div>
-						<div class="clearfix"> </div>
-					</div>
-					<div class="form_but1">
-						<label class="col-sm-3 control-label1">Family Values : </label>
-						<div class="col-sm-9 w3_details">
-							Moderate
+							<?php echo h($profile->lifestyle_stay); ?>
 						</div>
 						<div class="clearfix"> </div>
 					</div>
@@ -212,56 +194,56 @@ $profile = Profile::find_by_id($id);
 					<div class="form_but1">
 						<label class="col-sm-3 control-label1">Age : </label>
 						<div class="col-sm-9 w3_details">
-							25 - 27 Years
+							<?php echo h($profile->partner_age); ?>
 						</div>
 						<div class="clearfix"> </div>
 					</div>
 					<div class="form_but1">
 						<label class="col-sm-3 control-label1">Height : </label>
 						<div class="col-sm-9 w3_details">
-							 5' 6" to 6' 0"
+							 <?php echo h($profile->partner_height); ?>
 						</div>
 						<div class="clearfix"> </div>
 					</div>
 					<div class="form_but1">
 						<label class="col-sm-3 control-label1">Marital Status : </label>
 						<div class="col-sm-9 w3_details">
-							Never Married
+							<?php echo h($profile->partner_marital); ?>
 						</div>
 						<div class="clearfix"> </div>
 					</div>
 					<div class="form_but1">
 						<label class="col-sm-3 control-label1">Religion : </label>
 						<div class="col-sm-9 w3_details">
-							Doesn't Matter
+							<?php echo h($profile->partner_religion); ?>
 						</div>
 						<div class="clearfix"> </div>
 					</div>
 					<div class="form_but1">
 						<label class="col-sm-3 control-label1">Caste : </label>
 						<div class="col-sm-9 w3_details">
-							Doesn't Matter
+							<?php echo h($profile->partner_caste); ?>
 						</div>
 						<div class="clearfix"> </div>
 					</div>
 					<div class="form_but1">
 						<label class="col-sm-3 control-label1">Education : </label>
 						<div class="col-sm-9 w3_details">
-							Lorem ipsum dolor sit amet
+							<?php echo h($profile->partner_edu); ?>
 						</div>
 						<div class="clearfix"> </div>
 					</div>
 					<div class="form_but1">
 						<label class="col-sm-3 control-label1">Occupation : </label>
 						<div class="col-sm-9 w3_details">
-							IT Software
+							<?php echo h($profile->partner_occupation); ?>
 						</div>
 						<div class="clearfix"> </div>
 					</div>
 					<div class="form_but1">
 						<label class="col-sm-3 control-label1">Income : </label>
 						<div class="col-sm-9 w3_details">
-							$80,000 to 150,000
+							<?php echo h($profile->partner_income); ?>
 						</div>
 						<div class="clearfix"> </div>
 					</div>

@@ -3,10 +3,10 @@
 class Profile extends DatabaseObject {
 
   static protected $table_name = 'profile';
-  static protected $db_columns = ['id', 'personal_email', 'personal_gender', 'personal_age', 'personal_height', 'personal_religion', 'personal_caste', 'personal_marital', 'personal_tounge', 'personal_occupation', 'personal_ann_income', 'personal_country', 'personal_city', 'personal_about', 'personal_image', 'edu_HE', 'edu_PG', 'edu_PG_coll', 'edu_UG_deg', 'edu_School', 'family_mother', 'family_father', 'family_sisters', 'family_brothers', 'family_income', 'family_stay', 'family_value', 'lifestyle_appearance', 'lifestyle_assets', 'lifestyle_habits', 'lifestyle_language', 'lifestyle_bloodgroup', 'lifestyle_stay', 'partner_age', 'partner_height', 'partner_marital', 'partner_religion', 'partner_caste', 'partner_edu', 'partner_occupation', 'partner_income'];
+  static protected $db_columns = ['id', 'personal_name', 'personal_gender', 'personal_age', 'personal_height', 'personal_religion', 'personal_caste', 'personal_marital', 'personal_tounge', 'personal_occupation', 'personal_ann_income', 'personal_country', 'personal_city', 'personal_about', 'personal_image', 'edu_HE', 'edu_PG', 'edu_PG_coll', 'edu_UG_deg', 'edu_School', 'family_mother', 'family_father', 'family_sisters', 'family_brothers', 'family_income', 'family_stay', 'family_value', 'lifestyle_appearance', 'lifestyle_assets', 'lifestyle_habits', 'lifestyle_language', 'lifestyle_bloodgroup', 'lifestyle_stay', 'partner_age', 'partner_height', 'partner_marital', 'partner_religion', 'partner_caste', 'partner_edu', 'partner_occupation', 'partner_income'];
 
   public $id;
-  public $personal_email;
+  public $personal_name;
   public $personal_gender;
   public $personal_age;
   public $personal_height;
@@ -62,7 +62,7 @@ class Profile extends DatabaseObject {
 
   public function __construct($args=[]) {
     //$this->brand = isset($args['brand']) ? $args['brand'] : '';
-    $this->personal_email = $args['personal_email'] ?? '';
+    $this->personal_name = $args['personal_name'] ?? '';
     $this->personal_gender = $args['personal_gender'] ?? '';
     $this->personal_age = $args['personal_age'] ?? '';
     $this->personal_height = $args['personal_height'] ?? '';
@@ -114,6 +114,11 @@ class Profile extends DatabaseObject {
   public function name() {
     return "{$this->brand} {$this->model} {$this->year}";
   }
+
+  public function profile_main_detail() {
+    return "{$this->personal_age} year, {$this->personal_height}. {$this->personal_gender}, {$this->personal_religion}, {$this->personal_caste}, {$this->personal_city} {$this->personal_country}.";
+  }
+
   public function weight_kg() {
     return number_format($this->weight_kg, 2) . ' kg';
   }

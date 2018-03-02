@@ -1,18 +1,26 @@
 <?php require_once('private/initialize.php'); ?>
 <?php
+
+if (!isset($_GET['id'])) {
+    redirect_to(url_for('index.php'));
+}
+$id = $_GET['id'];
+$profile = Profile::find_by_id($id);
+if ($profile == false) {
+    redirect_to(url_for('profile.php'));
+}
 if (is_post_request()) {
 
     $args = $_POST['user'];
-    $profile = new Profile($args);
+    $profile->merge_attributes($args);
     $result = $profile->save();
 
     if ($result == true) {
-        $new_id = $profile->id;
         echo "<script>alert('Profile created..');</script>";
-    }
+    } else { /* shoe error */ }
 
 } else {
-    $profile = new Profile;
+    // display the form
 }
 include(SHARED_PATH . '/public_header.php');
 ?>
@@ -54,14 +62,14 @@ include(SHARED_PATH . '/public_header.php');
   <fieldset>
     <h2 class="fs-title">Personal Detail</h2>
     <h3 class="fs-subtitle">This is step 1</h3>
-    <input type="text" name="user[personal_name]" class="require_field" placeholder="Your Name"  />
-    <select name="user[personal_gender]" class="require_field" >
+    <input type="text" name="user[personal_name]" class="require_field" value="<?php echo $profile->personal_name; ?>" placeholder="Your Name"  />
+    <select name="user[personal_gender]" class="require_field" value="<?php echo $profile->personal_gender; ?>" >
     	<option value="">Select Gender</option>
     	<option value="Male">Male</option>
     	<option value="Female">Female</option>
     	<option value="Unisex">Unisex</option>
     </select>
-    <input type="text" name="user[personal_age]" placeholder="Your Age"  />
+    <input type="text" name="user[personal_age]" value="<?php echo $profile->personal_age; ?>" placeholder="Your Age"  />
     <input type="text" name="user[personal_height]" placeholder="Your Height"  />
     <select name="user[personal_religion]" class="frm-field required " placeholder="Your Religion"  >
     	<option value="" >Select Religion</option>
