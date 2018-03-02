@@ -1,4 +1,14 @@
 <?php require_once('private/initialize.php'); ?>
+
+<?php
+
+$id = $_GET['id'] ?? '1';
+
+$profile = Profile::find_by_id($id);
+
+// echo $profile->personal_email;
+?>
+
 <?php include(SHARED_PATH . '/public_header.php'); ?>
 <!-- 728x90 -->
 	<!-- inner banner -->	
@@ -31,7 +41,7 @@
 					<img src="images/profile-image-girl.jpg" alt="profile image" />
 				</div>
 				<div class="w3layouts_details">
-					<h4>Profile ID : ZXC45S3</h4>
+					<h4>Profile ID : ZXC45S3 <?php echo h($profile->personal_email); ?></h4>
 					<span>Last Online 2 days ago.</span>
 					<p>24yrs / 5Ft. 3In. (160 cm). Female, Christian, Gupta, Hindi USA.</p>
 					<a href="#" data-toggle="modal" data-target="#myModal">View Contact</a>

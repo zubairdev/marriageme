@@ -593,6 +593,14 @@ a.link {
 
 /*form styles*/
 
+.require_field {
+  background-image: url('../images/req_star.png');
+  background-repeat: no-repeat;
+  background-size: 15px 15px;
+  background-position: 98% 45%;
+
+}
+
 #msform {
     width: 50%;
     height: 1100px;
