@@ -50,8 +50,6 @@ class Profile extends DatabaseObject {
 
   public const CATEGORIES = ['Road', 'Mountain', 'Hybrid', 'Cruiser', 'City', 'BMX'];
 
-  public const GENDERS = ['Mens', 'Womens', 'Unisex'];
-
   public const CONDITION_OPTIONS = [
     1 => 'Beat up',
     2 => 'Decent',
@@ -59,6 +57,17 @@ class Profile extends DatabaseObject {
     4 => 'Great',
     5 => 'Like New'
   ];
+
+  public const RELIGIONS = ['Muslim', 'Hindu', 'Sikh', 'Christian', 'Buddhist', 'Jain', 'Parsi', 'Jewish', 'Other'];
+
+  public const GENDERS = ['Male', 'Female', 'Unisex'];
+
+  public const CASTS = ['Suleheria', 'Rajput', 'Rana', 'Mughal', 'Chaudhry', 'Arain', 'Butt', 'Baig', 'Baloach', 'Gujjar', 'Jat', 'Malik', 'Sheikh'];
+  public const MARITAL_STATUS = ['Single', 'Divorced', 'Widowed', 'Separated'];
+
+  public const TOUNGES = ['Urdu', 'English', 'Punjabi', 'Sindhi', 'Hindi'];
+
+  public const COUNTRIES = ['Pakistan', 'India', 'United Arab Emirates', 'United States', 'United Kingdom', 'Canade', 'Australia'];
 
   public function __construct($args=[]) {
     //$this->brand = isset($args['brand']) ? $args['brand'] : '';

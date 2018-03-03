@@ -72,7 +72,7 @@ $profile = Profile::find_by_id($id);
 						</div>
 						<div class="clearfix"> </div>
 					</div>
-					<?php if ($profile->family_sisters != 0) { ?>
+					<?php if ($profile->family_sisters == true) { ?>
 					<div class="form_but1">
 						<label class="col-sm-3 control-label1">Sister's : </label>
 						<div class="col-sm-9 w3_details">
