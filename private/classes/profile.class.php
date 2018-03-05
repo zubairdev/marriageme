@@ -153,44 +153,44 @@ class Profile extends DatabaseObject {
     }
   }
 
-  // protected function validate() {
-  //   $this->errors = [];
+  protected function validate() {
+    $this->errors = [];
 
-  //   if(is_blank($this->personal_gender)) {
-  //     $this->errors[] = "Gender cannot be blank.";
-  //   }
-  //   if(is_blank($this->personal_age)) {
-  //     $this->errors[] = "Age cannot be blank.";
-  //   }
-  //    if(is_blank($this->personal_height)) {
-  //     $this->errors[] = "Height cannot be blank.";
-  //   }
-  //    if(is_blank($this->personal_religion)) {
-  //     $this->errors[] = "Religion cannot be blank.";
-  //   }
-  //    if(is_blank($this->personal_caste)) {
-  //     $this->errors[] = "Caste cannot be blank.";
-  //   }
-  //    if(is_blank($this->personal_marital)) {
-  //     $this->errors[] = "Marital Status cannot be blank.";
-  //   }
-  //    if(is_blank($this->personal_tounge)) {
-  //     $this->errors[] = "Tounge Field cannot be blank.";
-  //   }
-  //   if(is_blank($this->personal_occupation)) {
-  //     $this->errors[] = "Occupation cannot be blank.";
-  //   }
-  //   if(is_blank($this->personal_country)) {
-  //     $this->errors[] = "Country cannot be blank.";
-  //   }
-  //   if(is_blank($this->personal_city)) {
-  //     $this->errors[] = "City cannot be blank.";
-  //   }
-  //   if(is_blank($this->edu_HE)) {
-  //     $this->errors[] = "Higher Education cannot be blank.";
-  //   }
-  //   return $this->errors;
-  // }
+    if(is_blank($this->personal_name)) {
+      $this->errors[] = "Gender cannot be blank.";
+    }
+    if(is_blank($this->personal_gender)) {
+      $this->errors[] = "Age cannot be blank.";
+    }
+     if(is_blank($this->personal_age)) {
+      $this->errors[] = "Height cannot be blank.";
+    }
+     if(is_blank($this->personal_religion)) {
+      $this->errors[] = "Religion cannot be blank.";
+    }
+     if(is_blank($this->personal_caste)) {
+      $this->errors[] = "Caste cannot be blank.";
+    }
+     if(is_blank($this->personal_marital)) {
+      $this->errors[] = "Marital Status cannot be blank.";
+    }
+     if(is_blank($this->personal_tounge)) {
+      $this->errors[] = "Tounge Field cannot be blank.";
+    }
+    if(is_blank($this->personal_occupation)) {
+      $this->errors[] = "Occupation cannot be blank.";
+    }
+    if(is_blank($this->personal_country)) {
+      $this->errors[] = "Country cannot be blank.";
+    }
+    if(is_blank($this->personal_city)) {
+      $this->errors[] = "City cannot be blank.";
+    }
+    if(is_blank($this->edu_HE)) {
+      $this->errors[] = "Higher Education cannot be blank.";
+    }
+    return $this->errors;
+  }
 
 
 }

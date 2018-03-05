@@ -46,7 +46,7 @@ if (!isset($profile)) {
     </select>
     <input type="text" name="user[personal_occupation]" value="<?php echo $profile->personal_occupation; ?>" placeholder="Your Occupation"  />
     <input type="text" name="user[personal_ann_income]" value="<?php echo $profile->personal_ann_income; ?>" placeholder="Your Annual Income" />
-    <select name="user[personal_country]" class="frm-field required " required>
+    <select name="user[personal_country]" class="frm-field required " >
     	<option value="">Select country</option>
         <?php foreach (Profile::COUNTRIES as $country) { ?>
     	<option value="<?php echo $country ?>"<?php if ($profile->personal_country == $country) { echo 'selected'; } ?>><?php echo $country ?></option>

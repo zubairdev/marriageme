@@ -2,26 +2,31 @@
 
 class Admin extends DatabaseObject {
 
-  static protected $table_name = "admins";
-  static protected $db_columns = ['id', 'first_name', 'last_name', 'email', 'username', 'hashed_password'];
+  static protected $table_name = "user";
+  static protected $db_columns = ['id', 'profile_for', 'name', 'gender', 'dob', 'religion', 'phone', 'email', 'password', 'term_cond'];
 
   public $id;
-  public $first_name;
-  public $last_name;
+  public $profile_for;
+  public $name;
+  public $gender;
+  public $dob;
+  public $religion;
+  public $phone;
   public $email;
-  public $username;
-  protected $hashed_password;
   public $password;
-  public $confirm_password;
+  protected $hashed_password;
   protected $password_required = true;
 
   public function __construct($args=[]) {
-    $this->first_name = $args['first_name'] ?? '';
-    $this->last_name = $args['last_name'] ?? '';
+    $this->profile_for = $args['profile_for'] ?? '';
+    $this->name = $args['name'] ?? '';
+    $this->gender = $args['gender'] ?? '';
+    $this->dob = $args['dob'] ?? '';
+    $this->religion = $args['religion'] ?? '';
+    $this->phone = $args['phone'] ?? '';
     $this->email = $args['email'] ?? '';
-    $this->username = $args['username'] ?? '';
     $this->password = $args['password'] ?? '';
-    $this->confirm_password = $args['confirm_password'] ?? '';
+    $this->term_cond = $args['term_cond'] ?? '';
   }
 
   public function full_name() {
@@ -55,16 +60,22 @@ class Admin extends DatabaseObject {
   protected function validate() {
     $this->errors = [];
 
-    if(is_blank($this->first_name)) {
-      $this->errors[] = "First name cannot be blank.";
-    } elseif (!has_length($this->first_name, array('min' => 2, 'max' => 255))) {
-      $this->errors[] = "First name must be between 2 and 255 characters.";
+    if(is_blank($this->profile_for)) {
+      $this->errors[] = "Must choose for whome you are creating profile?";
     }
 
-    if(is_blank($this->last_name)) {
-      $this->errors[] = "Last name cannot be blank.";
-    } elseif (!has_length($this->last_name, array('min' => 2, 'max' => 255))) {
-      $this->errors[] = "Last name must be between 2 and 255 characters.";
+    if(is_blank($this->name)) {
+      $this->errors[] = "Name cannot be blank.";
+    } elseif (!has_length($this->name, array('min' => 2, 'max' => 255))) {
+      $this->errors[] = "Name must be between 2 and 255 characters.";
+    }
+
+    if(is_blank($this->dob)) {
+      $this->errors[] = "DOB cannot be blank.";
+    }
+
+    if(is_blank($this->phone)) {
+      $this->errors[] = "Phone cannot be blank.";
     }
 
     if(is_blank($this->email)) {
@@ -73,14 +84,6 @@ class Admin extends DatabaseObject {
       $this->errors[] = "Last name must be less than 255 characters.";
     } elseif (!has_valid_email_format($this->email)) {
       $this->errors[] = "Email must be a valid format.";
-    }
-
-    if(is_blank($this->username)) {
-      $this->errors[] = "Username cannot be blank.";
-    } elseif (!has_length($this->username, array('min' => 8, 'max' => 255))) {
-      $this->errors[] = "Username must be between 8 and 255 characters.";
-    } elseif (!has_unique_username($this->username, $this->id ?? 0)) {
-      $this->errors[] = "Username not allowed. Try another.";
     }
 
     if($this->password_required) {
@@ -98,19 +101,14 @@ class Admin extends DatabaseObject {
         $this->errors[] = "Password must contain at least 1 symbol";
       }
 
-      if(is_blank($this->confirm_password)) {
-        $this->errors[] = "Confirm password cannot be blank.";
-      } elseif ($this->password !== $this->confirm_password) {
-        $this->errors[] = "Password and confirm password must match.";
-      }
     }
 
     return $this->errors;
   }
 
-  static public function find_by_username($username) {
+  static public function find_by_email($email) {
     $sql = "SELECT * FROM " . static::$table_name . " ";
-    $sql .= "WHERE username='" . self::$database->escape_string($username) . "'";
+    $sql .= "WHERE email='" . self::$database->escape_string($email) . "'";
     $obj_array = static::find_by_sql($sql);
     if(!empty($obj_array)) {
       return array_shift($obj_array);

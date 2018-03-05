@@ -12,15 +12,18 @@ function require_login() {
 function display_errors($errors=array()) {
   $output = '';
   if(!empty($errors)) {
-    $output .= "<div class=\"errors\">";
-    $output .= "Please fix the following errors:";
+    $output .= "<div style=\"width:100%; background-color:#f3dede;\">";
+    $output .= "<div class=\"errors alert alert-danger container\" style=\"margin-bottom:0;border:none;\" role=\"alert\">";
+    $output .= "<h3 style=\"margin-bottom:10px;\">Please fix the following errors:</h3>";
     $output .= "<ul>";
     foreach($errors as $error) {
       $output .= "<li>" . h($error) . "</li>";
     }
     $output .= "</ul>";
     $output .= "</div>";
+    $output .= "</div>";
   }
+
   return $output;
 }
 

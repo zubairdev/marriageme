@@ -37,7 +37,7 @@ include(SHARED_PATH . '/public_header.php');
 	</div>
 </div>
 <!-- //breadcrumbs -->
-
+<?php echo display_errors($profile->errors); ?>
 <!-- Multi Process form start -->
 <div class="write-agileits">
 <form id="msform" class="p-0" method="POST" action="" enctype="multipart/form-data">

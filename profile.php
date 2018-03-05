@@ -90,6 +90,7 @@ $profile = Profile::find_by_id($id);
 						<div class="clearfix"> </div>
 					</div>
 					<?php } else { /* do nothing */ } ?>
+					<?php if ($profile->family_income == true) { ?>
 					<div class="form_but1">
 						<label class="col-sm-3 control-label1">Family Income : </label>
 						<div class="col-sm-9 w3_details">
@@ -97,6 +98,7 @@ $profile = Profile::find_by_id($id);
 						</div>
 						<div class="clearfix"> </div>
 					</div>
+					<?php } else { /* do nothing */ } ?>
 					<div class="form_but1">
 						<label class="col-sm-3 control-label1">Stay : </label>
 						<div class="col-sm-9 w3_details">
@@ -112,6 +114,7 @@ $profile = Profile::find_by_id($id);
 						<div class="clearfix"> </div>
 					</div>
 					<h5>Education Details:</h5>
+					<?php if ($profile->edu_HE == true) { ?>
 					<div class="form_but1">
 						<label class="col-sm-3 control-label1">Highest Education : </label>
 						<div class="col-sm-9 w3_details">
@@ -119,6 +122,7 @@ $profile = Profile::find_by_id($id);
 						</div>
 						<div class="clearfix"> </div>
 					</div>
+					<?php } else { /* do nothing */ } ?>
 					<div class="form_but1">
 						<label class="col-sm-3 control-label1">UG Degree : </label>
 						<div class="col-sm-9 w3_details">
@@ -133,6 +137,7 @@ $profile = Profile::find_by_id($id);
 						</div>
 						<div class="clearfix"> </div>
 					</div>
+					<?php if ($profile->edu_PG == true) { ?>
 					<div class="form_but1">
 						<label class="col-sm-3 control-label1">PG Degree : </label>
 						<div class="col-sm-9 w3_details">
@@ -140,6 +145,7 @@ $profile = Profile::find_by_id($id);
 						</div>
 						<div class="clearfix"> </div>
 					</div>
+					<?php } else { /* do nothing */ } ?>
 					<div class="form_but1">
 						<label class="col-sm-3 control-label1">PG College : </label>
 						<div class="col-sm-9 w3_details">
@@ -155,6 +161,7 @@ $profile = Profile::find_by_id($id);
 						</div>
 						<div class="clearfix"> </div>
 					</div>
+					<?php if ($profile->lifestyle_assets == true) { ?>
 					<div class="form_but1">
 						<label class="col-sm-3 control-label1">Assets : </label>
 						<div class="col-sm-9 w3_details">
@@ -162,6 +169,8 @@ $profile = Profile::find_by_id($id);
 						</div>
 						<div class="clearfix"> </div>
 					</div>
+					<?php } else { /* do nothing */ } ?>
+					<?php if ($profile->lifestyle_habits == true) { ?>
 					<div class="form_but1">
 						<label class="col-sm-3 control-label1">Habits : </label>
 						<div class="col-sm-9 w3_details">
@@ -169,6 +178,7 @@ $profile = Profile::find_by_id($id);
 						</div>
 						<div class="clearfix"> </div>
 					</div>
+					<?php } else { /* do nothing */ } ?>
 					<div class="form_but1">
 						<label class="col-sm-3 control-label1">Languages Known : </label>
 						<div class="col-sm-9 w3_details">
@@ -226,6 +236,7 @@ $profile = Profile::find_by_id($id);
 						</div>
 						<div class="clearfix"> </div>
 					</div>
+					<?php if ($profile->partner_edu == true) { ?>
 					<div class="form_but1">
 						<label class="col-sm-3 control-label1">Education : </label>
 						<div class="col-sm-9 w3_details">
@@ -233,6 +244,8 @@ $profile = Profile::find_by_id($id);
 						</div>
 						<div class="clearfix"> </div>
 					</div>
+					<?php } else { /* do nothing */ } ?>
+					<?php if ($profile->partner_occupation == true) { ?>
 					<div class="form_but1">
 						<label class="col-sm-3 control-label1">Occupation : </label>
 						<div class="col-sm-9 w3_details">
@@ -240,6 +253,8 @@ $profile = Profile::find_by_id($id);
 						</div>
 						<div class="clearfix"> </div>
 					</div>
+					<?php } else { /* do nothing */ } ?>
+					<?php if ($profile->partner_income == true) { ?>
 					<div class="form_but1">
 						<label class="col-sm-3 control-label1">Income : </label>
 						<div class="col-sm-9 w3_details">
@@ -247,6 +262,7 @@ $profile = Profile::find_by_id($id);
 						</div>
 						<div class="clearfix"> </div>
 					</div>
+					<?php } else { /* do nothing */ } ?>
 				</div>
 			</div>
 		</div>

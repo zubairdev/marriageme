@@ -1,6 +1,64 @@
 <?php require_once('private/initialize.php'); ?>
+<?php
+
+$errors = [];
+$email = '';
+$password = '';
+
+if (is_post_request()) {
+
+	if (isset($_POST['signup-submit'])) {
+		$args = $_POST['user'];
+		$admin = new Admin($args);
+		$result = $admin->save();
+
+		if ($result === true) {
+			$new_id = $admin->id;
+			echo '<script>alert("New User Created..!");</script>';
+		} else {
+		// show error
+		}
+	}
+
+	if (isset($_POST['login-submit'])) {
+
+		$email = $_POST['email'] ?? '';
+		$password = $_POST['password'] ?? '';
+
+  		// Validations
+		if(is_blank($email)) {
+			$errors[] = "Email cannot be blank.";
+		}
+		if(is_blank($password)) {
+			$errors[] = "Password cannot be blank.";
+		}
+
+  		// if there were no errors, try to login
+		if(empty($errors)) {
+			$admin = Admin::find_by_email($email);
+    	// test if admin found and password is correct
+			if($admin != false) {
+      	// Mark admin as logged in
+				// $session->login($admin);
+				redirect_to(url_for('/index.php'));
+			} else {
+      	// username not found or password does not match
+				$errors[] = "Log in was unsuccessful.";
+			}
+
+		}
+	}
+
+} else {
+	// display the form
+	$admin = new Admin;
+}
+
+?>
+
 <?php include(SHARED_PATH . '/public_header.php'); ?>
-<!---728x90 -->
+<!-- 728x90 -->
+<?php echo display_errors($admin->errors); ?>
 <div class="w3layouts-banner" id="home">
 <div class="container">
 	<div class="logo">
@@ -9,32 +67,32 @@
 	<div class="clearfix"></div>
 	<div class="agileits-register">
 		<h3>Register NOW!</h3>
-		<form action="#" method="post">
+		<form action="#" method="post" action="<?php echo url_for('index.php'); ?>">
 				<div class="w3_modal_body_grid">
 					<span>Profile For:</span>
-					<select id="w3_country" onchange="change_country(this.value)" class="frm-field required">
-						<option value="null">Select</option>
-						<option value="null">Myself</option>   
-						<option value="null">Son</option>   
-						<option value="null">Daughter</option>   
-						<option value="null">Brother</option>   
-						<option value="null">Sister</option>  
-						<option value="null">Relative</option>
-						<option value="null">Friend</option>						
+					<select id="w3_country" name="user[profile_for]" onchange="change_country(this.value)" class="frm-field required">
+						<option value="">Select</option>
+						<option value="myself">Myself</option>
+						<option value="son">Son</option>
+						<option value="daughter">Daughter</option>
+						<option value="brother">Brother</option>   
+						<option value="sister">Sister</option>  
+						<option value="relative">Relative</option>
+						<option value="friend">Friend</option>						
 					</select>
 				</div>
 				<div class="w3_modal_body_grid w3_modal_body_grid1">
 					<span>Name:</span>
-					<input type="text" name="Name" placeholder=" " required=""/>
+					<input type="text" name="user[name]" placeholder=" " required=""/>
 				</div>
 				<div class="w3_modal_body_grid">
 					<span>Gender:</span>
 					<div class="w3_gender">
 						<div class="colr ert">
-							<label class="radio"><input type="radio" name="radio" checked=""><i></i>Male</label>
+							<label class="radio"><input type="radio" name="user[gender]" value="male" checked=""><i></i>Male</label>
 						</div>
 						<div class="colr">
-							<label class="radio"><input type="radio" name="radio"><i></i>Female</label>
+							<label class="radio"><input type="radio" name="user[gender]" value="female"><i></i>Female</label>
 						</div>
 						<div class="clearfix"> </div>
 					</div>
@@ -42,25 +100,25 @@
 				</div>
 				<div class="w3_modal_body_grid w3_modal_body_grid1">
 					<span>Date Of Birth:</span>
-					<input class="date" id="datepicker" name="Text" type="text" value="mm/dd/yyyy" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '2/08/2013';}" required="" />
+					<input type="date" name="user[dob]" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = '2/08/2013';}" required="" />
 				</div>
 				<div class="w3_modal_body_grid">
 					<span>religion:</span>
-					<select id="w3_country1" onchange="change_country(this.value)" class="frm-field required"> 
-						<option value="null">Select Religion</option>
-						<option value="null">Muslim</option>
-						<option value="null">Hindu</option>    
-						<option value="null">Christian</option>   
-						<option value="null">Sikh</option>   
-						<option value="null">Jain</option>   
-						<option value="null">Buddhist</option>
-						<option value="null">No Religious Belief</option>   						
+					<select id="w3_country1" onchange="change_country(this.value)" name="user[religion]" class="frm-field required"> 
+						<option value="">Select Religion</option>
+						<option value="muslim">Muslim</option>
+						<option value="hindu">Hindu</option>    
+						<option value="christian">Christian</option>   
+						<option value="sikh">Sikh</option>   
+						<option value="jain">Jain</option>   
+						<option value="buddhist">Buddhist</option>
+						<option value="any">No Religious Belief</option>   						
 					</select>
 				</div>
 				<div class="w3_modal_body_grid w3_modal_body_grid1">
 				<span>Mobile No:</span>
 				<!-- country codes (ISO 3166) and Dial codes. -->
-					<input id="phone" type="tel">
+					<input id="phone" type="tel" name="user[phone]">
 				  <!-- Load jQuery from CDN so can run demo immediately -->
 				  <script src="js/intlTelInput.js"></script>
 				  <script>
@@ -89,17 +147,17 @@
 				</div>
 				<div class="w3_modal_body_grid">
 					<span>Email:</span>
-					<input type="email" name="Email" placeholder=" " required=""/>
+					<input type="email" name="user[email]" placeholder=" " required=""/>
 				</div>
 				<div class="w3_modal_body_grid w3_modal_body_grid1">
 					<span>Password:</span>
-					<input type="password" name="Password" placeholder=" " required=""/>
+					<input type="password" name="user[password]" placeholder=" " required=""/>
 				</div>
 				<div class="w3-agree">
-					<input type="checkbox" id="c1" name="cc">
+					<input type="checkbox" id="c1" name="user[term_cond]" required="">
 					<label class="agileits-agree">I have read & agree to the <a href="terms.php">Terms and Conditions</a></label>
 				</div>
-				<input type="submit" value="Register me" />
+				<input type="submit" name="signup-submit" value="Register me" />
 				<div class="clearfix"></div>
 				<p class="w3ls-login">Already a member? <a href="#" data-toggle="modal" data-target="#myModal">Login</a></p>
 			</form>
@@ -115,18 +173,18 @@
 					  </div>
 					  <div class="modal-body">
 						<div class="login-w3ls">
-							<form id="signin" action="#" method="post">
+							<form id="signin" action="" method="post">
 								<label>User Name </label>
-								<input type="text" name="User Name" placeholder="Username" required="">
+								<input type="email" name="email" placeholder="Email" required="">
 								<label>Password</label>
-								<input type="password" name="Password" placeholder="Password" required="">	
+								<input type="password" name="password" placeholder="Password" required="">	
 								<div class="w3ls-loginr"> 
 									<input type="checkbox" id="brand" name="checkbox" value="">
 									<span> Remember me ?</span> 
 									<a href="#">Forgot password ?</a>
 								</div>
 								<div class="clearfix"> </div>
-								<input type="submit" name="submit" value="Login">
+								<input type="submit" name="login-submit" value="Login">
 								<div class="clearfix"> </div>
 								<div class="social-icons">
 									<ul>  
@@ -144,7 +202,7 @@
 				<!-- //Modal -->
 	</div>
 </div>
-<!---728x90--->
+<!-- 728x90 -->
 <!-- Find your soulmate -->
 	<div class="w3l_find-soulmate text-center">
 		<h3>Find Your Soulmate</h3>
