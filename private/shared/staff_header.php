@@ -307,6 +307,15 @@
 										</li>
 										<li><a href="contact.php">Contacts</a></li>
 										<li class="last active"><a href="insert_profile.php">Create Profile</a></li>
+										<li class="dropdown">
+											<a href="#" class="dropdown-toggle" data-toggle="dropdown">User: <?php // echo $_SESSION['email']; ?><span class="caret"></span></a>
+											<ul class="dropdown-menu" role="menu">
+												<li><a href="profile.php">View Profile</a></li>
+												<li><a href="edit_profile.php">Edit Profile</a></li>
+												<li><a href="delete_profile.php">Delete Profile</a></li>
+												<li><a href="logout.php">Logout</a></li>
+											</ul>
+										</li>
 									</ul>
 								</div><!-- /.navbar-collapse -->
 							</nav>

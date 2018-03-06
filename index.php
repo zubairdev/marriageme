@@ -9,11 +9,11 @@ if (is_post_request()) {
 
 	if (isset($_POST['signup-submit'])) {
 		$args = $_POST['user'];
-		$admin = new Admin($args);
-		$result = $admin->save();
+		$user = new Admin($args);
+		$result = $user->save();
 
 		if ($result === true) {
-			$new_id = $admin->id;
+			$new_id = $user->id;
 			echo '<script>alert("New User Created..!");</script>';
 		} else {
 		// show error
@@ -35,11 +35,11 @@ if (is_post_request()) {
 
   		// if there were no errors, try to login
 		if(empty($errors)) {
-			$admin = Admin::find_by_email($email);
-    	// test if admin found and password is correct
-			if($admin != false) {
-      	// Mark admin as logged in
-				// $session->login($admin);
+			$user = Admin::find_by_email($email);
+    	// test if user found and password is correct
+			if($user != false && $user->verify_password($password)) {
+      	// Mark user as logged in
+				$session->login($user);
 				redirect_to(url_for('/index.php'));
 			} else {
       	// username not found or password does not match
@@ -51,14 +51,14 @@ if (is_post_request()) {
 
 } else {
 	// display the form
-	$admin = new Admin;
+	$user = new Admin;
 }
 
 ?>
 
 <?php include(SHARED_PATH . '/public_header.php'); ?>
 <!-- 728x90 -->
-<?php echo display_errors($admin->errors); ?>
+<?php echo display_errors($user->errors); ?>
 <div class="w3layouts-banner" id="home">
 <div class="container">
 	<div class="logo">
