@@ -3,9 +3,11 @@
 class Profile extends DatabaseObject {
 
   static protected $table_name = 'profile';
-  static protected $db_columns = ['id', 'personal_name', 'personal_gender', 'personal_age', 'personal_height', 'personal_religion', 'personal_caste', 'personal_marital', 'personal_tounge', 'personal_occupation', 'personal_ann_income', 'personal_country', 'personal_city', 'personal_about', 'personal_image', 'edu_HE', 'edu_PG', 'edu_PG_coll', 'edu_UG_deg', 'edu_School', 'family_mother', 'family_father', 'family_sisters', 'family_brothers', 'family_income', 'family_stay', 'family_value', 'lifestyle_appearance', 'lifestyle_assets', 'lifestyle_habits', 'lifestyle_language', 'lifestyle_bloodgroup', 'lifestyle_stay', 'partner_age', 'partner_height', 'partner_marital', 'partner_religion', 'partner_caste', 'partner_edu', 'partner_occupation', 'partner_income'];
+  static protected $db_columns = ['id', 'user_id', 'profile_exist', 'personal_name', 'personal_gender', 'personal_age', 'personal_height', 'personal_religion', 'personal_caste', 'personal_marital', 'personal_tounge', 'personal_occupation', 'personal_ann_income', 'personal_country', 'personal_city', 'personal_about', 'personal_image', 'edu_HE', 'edu_PG', 'edu_PG_coll', 'edu_UG_deg', 'edu_School', 'family_mother', 'family_father', 'family_sisters', 'family_brothers', 'family_income', 'family_stay', 'family_value', 'lifestyle_appearance', 'lifestyle_assets', 'lifestyle_habits', 'lifestyle_language', 'lifestyle_bloodgroup', 'lifestyle_stay', 'partner_age', 'partner_height', 'partner_marital', 'partner_religion', 'partner_caste', 'partner_edu', 'partner_occupation', 'partner_income'];
 
   public $id;
+  public $user_id;
+  public $profile_exist;
   public $personal_name;
   public $personal_gender;
   public $personal_age;
@@ -71,6 +73,8 @@ class Profile extends DatabaseObject {
 
   public function __construct($args=[]) {
     //$this->brand = isset($args['brand']) ? $args['brand'] : '';
+    $this->user_id = $args['user_id'] ?? '';
+    $this->profile_exist = $args['profile_exist'] ?? '';
     $this->personal_name = $args['personal_name'] ?? '';
     $this->personal_gender = $args['personal_gender'] ?? '';
     $this->personal_age = $args['personal_age'] ?? '';
@@ -186,9 +190,9 @@ class Profile extends DatabaseObject {
     if(is_blank($this->personal_city)) {
       $this->errors[] = "City cannot be blank.";
     }
-    if(is_blank($this->edu_HE)) {
-      $this->errors[] = "Higher Education cannot be blank.";
-    }
+    // if($this->edu_HE == "") {
+    //   $this->errors[] = "Higher Education cannot be blank.";
+    // }
     return $this->errors;
   }
 

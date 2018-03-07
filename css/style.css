@@ -589,6 +589,26 @@ a.link {
 /* //logo-effect */
 
 /* ==========================================================================
+   ================== Staff Header Styling Start =========================== */
+
+.staff-header {
+  width: 40px;
+  height: 40px;
+  border: 1px solid grey;
+  border-radius: 50%;
+}
+.staff-header > a {
+  background-color: inherit !important;
+}
+.staff-header > a:focus {
+  background-color: inherit !important;
+}
+
+
+/* ==========================================================================
+   ================== Staff Header Styling End =========================== */
+
+/* ==========================================================================
    ================== Multi Process Form Start =========================== */
 
 /*form styles*/

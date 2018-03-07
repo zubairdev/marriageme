@@ -1,5 +1,21 @@
 <?php require_once('private/initialize.php'); ?>
 <?php
+
+if ($session->is_logged_in()) {
+  $session_id = $session->user_id;
+  $profile = Profile::find_by_user_id($session_id);
+  $profile_exist = $profile->profile_exist;
+  $profile_id = $profile->id;
+
+  if ($profile_exist == true) {
+    redirect_to(url_for('profile.php?id=' . h($profile_id)));
+  }
+
+echo 'Profile Exists: ' . $profile_exist . '<br>';
+echo 'Session ID: ' . $session_id;
+
+}
+
 if (is_post_request()) {
 
     $args = $_POST['user'];

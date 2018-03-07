@@ -24,7 +24,7 @@ if (is_post_request()) {
 } else {
     // display the form
 }
-include(SHARED_PATH . '/staff_header.php');
+include(SHARED_PATH . '/public_header.php');
 ?>
 <!-- <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script> -->
 <!-- 728x90 -->

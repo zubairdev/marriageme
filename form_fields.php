@@ -11,6 +11,8 @@ if (!isset($profile)) {
   <fieldset>
     <h2 class="fs-title">Personal Detail</h2>
     <h3 class="fs-subtitle">This is step 1</h3>
+    <input type="hidden" name="user[user_id]" value="<?php echo $session->user_id; ?>" />
+    <input type="hidden" name="user[profile_exist]" value="<?php echo '1'; ?>" />
     <input type="text" name="user[personal_name]" class="require_field" value="<?php echo $profile->personal_name; ?>" placeholder="Your Name"  />
     <select name="user[personal_gender]" class="require_field" >
     	<option value="">Select Gender</option>

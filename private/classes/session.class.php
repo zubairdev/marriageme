@@ -2,8 +2,9 @@
 
 class Session {
 
-  private $user_id;
+  public $user_id;
   public $email;
+  public $name;
   private $last_login;
 
   public const MAX_LOGIN_AGE = 60*60*24; // 1 day
@@ -18,6 +19,7 @@ class Session {
       // prevent session fixation attacks
       session_regenerate_id();
       $this->user_id = $_SESSION['user_id'] = $user->id;
+      $this->name = $_SESSION['name'] = $user->name;
       $this->email = $_SESSION['email'] = $user->email;
       $this->last_login = $_SESSION['last_login'] = time();
     }
@@ -31,6 +33,7 @@ class Session {
 
   public function logout() {
     unset($_SESSION['user_id']);
+    unset($_SESSION['name']);
     unset($_SESSION['email']);
     unset($_SESSION['last_login']);
     unset($this->user_id);
@@ -42,6 +45,7 @@ class Session {
   private function check_stored_login() {
     if(isset($_SESSION['user_id'])) {
       $this->user_id = $_SESSION['user_id'];
+      $this->name = $_SESSION['name'];
       $this->email = $_SESSION['email'];
       $this->last_login = $_SESSION['last_login'];
     }

@@ -306,7 +306,23 @@
 											</ul>
 										</li>
 										<li><a href="contact.php">Contacts</a></li>
-										<li class="last active"><a href="insert_profile.php">Create Profile</a></li>
+										<?php 
+											if($session->is_logged_in()) { 
+												$session_id = $session->user_id;
+												$profile = Profile::find_by_user_id($session_id);
+												$profile_id = $profile->id;
+										?>
+										<li class="dropdown">
+											<a href="#" class="dropdown-toggle" data-toggle="dropdown"><?php echo $session->name; ?> <span class="caret"></span></a>
+											<ul class="dropdown-menu" role="menu">
+												<li><a href="profile.php?id=<?php echo h($profile_id); ?>">View Profile</a></li>
+												<li><a href="edit_profile.php?id=<?php echo h($profile_id); ?>">Edit Profile</a></li>
+												<li><a href="delete.php?id=<?php echo h($profile_id); ?>">Delete Profile</a></li>
+												<li><a href="logout.php">Logout</a></li>
+											</ul>
+										</li>
+										<?php } ?>
+										<!-- <li class="last active"><a href="insert_profile.php">Create Profile</a></li> -->
 									</ul>
 								</div><!-- /.navbar-collapse -->
 							</nav>
