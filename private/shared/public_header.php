@@ -310,6 +310,8 @@
 											if($session->is_logged_in()) { 
 												$session_id = $session->user_id;
 												$profile = Profile::find_by_user_id($session_id);
+												// echo 'User_id: ' . $profile->user_id;
+												if ($profile->user_id != '') {
 												$profile_id = $profile->id;
 										?>
 										<li class="dropdown">
@@ -321,6 +323,7 @@
 												<li><a href="logout.php">Logout</a></li>
 											</ul>
 										</li>
+										<?php } ?>
 										<?php } ?>
 										<!-- <li class="last active"><a href="insert_profile.php">Create Profile</a></li> -->
 									</ul>
